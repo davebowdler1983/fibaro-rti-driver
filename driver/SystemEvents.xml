@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fibaro Driver Events v5.10 - July 2025 - Device states -->
+<events>
+	<!-- Connection Events -->
+	<category name="Connection">
+		<event name="Connected to Fibaro" tag="CONNECTED" />
+		<event name="Disconnected from Fibaro" tag="DISCONNECTED" />
+		<event name="Connection Error" tag="CONNECTION_ERROR" />
+		<event name="Authentication Failed" tag="AUTH_FAILED" />
+	</category>
+
+	<!-- Room 1 Light Events -->
+	<category name="%%Room1_Name%% Lights" condition="$Room1_Enable == 1">
+		<event name="%%Room1_Light1_Name%% Turned On" tag="ROOM1_LIGHT1_ON" condition="$Room1_Light1_Enable == 1" />
+		<event name="%%Room1_Light1_Name%% Turned Off" tag="ROOM1_LIGHT1_OFF" condition="$Room1_Light1_Enable == 1" />
+		<event name="%%Room1_Light1_Name%% Level Changed" tag="ROOM1_LIGHT1_LEVEL" condition="$Room1_Light1_Enable == 1 and $Room1_Light1_IsDimmer == 1" />
+		<event name="%%Room1_Light2_Name%% Turned On" tag="ROOM1_LIGHT2_ON" condition="$Room1_Light2_Enable == 1" />
+		<event name="%%Room1_Light2_Name%% Turned Off" tag="ROOM1_LIGHT2_OFF" condition="$Room1_Light2_Enable == 1" />
+		<event name="%%Room1_Light2_Name%% Level Changed" tag="ROOM1_LIGHT2_LEVEL" condition="$Room1_Light2_Enable == 1 and $Room1_Light2_IsDimmer == 1" />
+		<event name="%%Room1_Light3_Name%% Turned On" tag="ROOM1_LIGHT3_ON" condition="$Room1_Light3_Enable == 1" />
+		<event name="%%Room1_Light3_Name%% Turned Off" tag="ROOM1_LIGHT3_OFF" condition="$Room1_Light3_Enable == 1" />
+		<event name="%%Room1_Light3_Name%% Level Changed" tag="ROOM1_LIGHT3_LEVEL" condition="$Room1_Light3_Enable == 1 and $Room1_Light3_IsDimmer == 1" />
+		<event name="%%Room1_Light4_Name%% Turned On" tag="ROOM1_LIGHT4_ON" condition="$Room1_Light4_Enable == 1" />
+		<event name="%%Room1_Light4_Name%% Turned Off" tag="ROOM1_LIGHT4_OFF" condition="$Room1_Light4_Enable == 1" />
+		<event name="%%Room1_Light4_Name%% Level Changed" tag="ROOM1_LIGHT4_LEVEL" condition="$Room1_Light4_Enable == 1 and $Room1_Light4_IsDimmer == 1" />
+		<event name="%%Room1_Light5_Name%% Turned On" tag="ROOM1_LIGHT5_ON" condition="$Room1_Light5_Enable == 1" />
+		<event name="%%Room1_Light5_Name%% Turned Off" tag="ROOM1_LIGHT5_OFF" condition="$Room1_Light5_Enable == 1" />
+		<event name="%%Room1_Light5_Name%% Level Changed" tag="ROOM1_LIGHT5_LEVEL" condition="$Room1_Light5_Enable == 1 and $Room1_Light5_IsDimmer == 1" />
+		<event name="%%Room1_Light6_Name%% Turned On" tag="ROOM1_LIGHT6_ON" condition="$Room1_Light6_Enable == 1" />
+		<event name="%%Room1_Light6_Name%% Turned Off" tag="ROOM1_LIGHT6_OFF" condition="$Room1_Light6_Enable == 1" />
+		<event name="%%Room1_Light6_Name%% Level Changed" tag="ROOM1_LIGHT6_LEVEL" condition="$Room1_Light6_Enable == 1 and $Room1_Light6_IsDimmer == 1" />
+		<event name="%%Room1_Light7_Name%% Turned On" tag="ROOM1_LIGHT7_ON" condition="$Room1_Light7_Enable == 1" />
+		<event name="%%Room1_Light7_Name%% Turned Off" tag="ROOM1_LIGHT7_OFF" condition="$Room1_Light7_Enable == 1" />
+		<event name="%%Room1_Light7_Name%% Level Changed" tag="ROOM1_LIGHT7_LEVEL" condition="$Room1_Light7_Enable == 1 and $Room1_Light7_IsDimmer == 1" />
+		<event name="%%Room1_Light8_Name%% Turned On" tag="ROOM1_LIGHT8_ON" condition="$Room1_Light8_Enable == 1" />
+		<event name="%%Room1_Light8_Name%% Turned Off" tag="ROOM1_LIGHT8_OFF" condition="$Room1_Light8_Enable == 1" />
+		<event name="%%Room1_Light8_Name%% Level Changed" tag="ROOM1_LIGHT8_LEVEL" condition="$Room1_Light8_Enable == 1 and $Room1_Light8_IsDimmer == 1" />
+		<event name="%%Room1_Light9_Name%% Turned On" tag="ROOM1_LIGHT9_ON" condition="$Room1_Light9_Enable == 1" />
+		<event name="%%Room1_Light9_Name%% Turned Off" tag="ROOM1_LIGHT9_OFF" condition="$Room1_Light9_Enable == 1" />
+		<event name="%%Room1_Light9_Name%% Level Changed" tag="ROOM1_LIGHT9_LEVEL" condition="$Room1_Light9_Enable == 1 and $Room1_Light9_IsDimmer == 1" />
+		<event name="%%Room1_Light10_Name%% Turned On" tag="ROOM1_LIGHT10_ON" condition="$Room1_Light10_Enable == 1" />
+		<event name="%%Room1_Light10_Name%% Turned Off" tag="ROOM1_LIGHT10_OFF" condition="$Room1_Light10_Enable == 1" />
+		<event name="%%Room1_Light10_Name%% Level Changed" tag="ROOM1_LIGHT10_LEVEL" condition="$Room1_Light10_Enable == 1 and $Room1_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 1 Scene Events -->
+	<category name="%%Room1_Name%% Scenes" condition="$Room1_Enable == 1">
+		<event name="%%Room1_Scene1_Name%% Activated" tag="ROOM1_SCENE1_ACTIVATED" condition="$Room1_Scene1_Enable == 1" />
+		<event name="%%Room1_Scene2_Name%% Activated" tag="ROOM1_SCENE2_ACTIVATED" condition="$Room1_Scene2_Enable == 1" />
+		<event name="%%Room1_Scene3_Name%% Activated" tag="ROOM1_SCENE3_ACTIVATED" condition="$Room1_Scene3_Enable == 1" />
+		<event name="%%Room1_Scene4_Name%% Activated" tag="ROOM1_SCENE4_ACTIVATED" condition="$Room1_Scene4_Enable == 1" />
+		<event name="%%Room1_Scene5_Name%% Activated" tag="ROOM1_SCENE5_ACTIVATED" condition="$Room1_Scene5_Enable == 1" />
+		<event name="%%Room1_Scene6_Name%% Activated" tag="ROOM1_SCENE6_ACTIVATED" condition="$Room1_Scene6_Enable == 1" />
+		<event name="%%Room1_Scene7_Name%% Activated" tag="ROOM1_SCENE7_ACTIVATED" condition="$Room1_Scene7_Enable == 1" />
+		<event name="%%Room1_Scene8_Name%% Activated" tag="ROOM1_SCENE8_ACTIVATED" condition="$Room1_Scene8_Enable == 1" />
+		<event name="%%Room1_Scene9_Name%% Activated" tag="ROOM1_SCENE9_ACTIVATED" condition="$Room1_Scene9_Enable == 1" />
+		<event name="%%Room1_Scene10_Name%% Activated" tag="ROOM1_SCENE10_ACTIVATED" condition="$Room1_Scene10_Enable == 1" />
+		<event name="%%Room1_Scene11_Name%% Activated" tag="ROOM1_SCENE11_ACTIVATED" condition="$Room1_Scene11_Enable == 1" />
+		<event name="%%Room1_Scene12_Name%% Activated" tag="ROOM1_SCENE12_ACTIVATED" condition="$Room1_Scene12_Enable == 1" />
+		<event name="%%Room1_Scene13_Name%% Activated" tag="ROOM1_SCENE13_ACTIVATED" condition="$Room1_Scene13_Enable == 1" />
+		<event name="%%Room1_Scene14_Name%% Activated" tag="ROOM1_SCENE14_ACTIVATED" condition="$Room1_Scene14_Enable == 1" />
+		<event name="%%Room1_Scene15_Name%% Activated" tag="ROOM1_SCENE15_ACTIVATED" condition="$Room1_Scene15_Enable == 1" />
+		<event name="%%Room1_Scene16_Name%% Activated" tag="ROOM1_SCENE16_ACTIVATED" condition="$Room1_Scene16_Enable == 1" />
+		<event name="%%Room1_Scene17_Name%% Activated" tag="ROOM1_SCENE17_ACTIVATED" condition="$Room1_Scene17_Enable == 1" />
+		<event name="%%Room1_Scene18_Name%% Activated" tag="ROOM1_SCENE18_ACTIVATED" condition="$Room1_Scene18_Enable == 1" />
+		<event name="%%Room1_Scene19_Name%% Activated" tag="ROOM1_SCENE19_ACTIVATED" condition="$Room1_Scene19_Enable == 1" />
+		<event name="%%Room1_Scene20_Name%% Activated" tag="ROOM1_SCENE20_ACTIVATED" condition="$Room1_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 2 Light Events -->
+	<category name="%%Room2_Name%% Lights" condition="$Room2_Enable == 1">
+		<event name="%%Room2_Light1_Name%% Turned On" tag="ROOM2_LIGHT1_ON" condition="$Room2_Light1_Enable == 1" />
+		<event name="%%Room2_Light1_Name%% Turned Off" tag="ROOM2_LIGHT1_OFF" condition="$Room2_Light1_Enable == 1" />
+		<event name="%%Room2_Light1_Name%% Level Changed" tag="ROOM2_LIGHT1_LEVEL" condition="$Room2_Light1_Enable == 1 and $Room2_Light1_IsDimmer == 1" />
+		<event name="%%Room2_Light2_Name%% Turned On" tag="ROOM2_LIGHT2_ON" condition="$Room2_Light2_Enable == 1" />
+		<event name="%%Room2_Light2_Name%% Turned Off" tag="ROOM2_LIGHT2_OFF" condition="$Room2_Light2_Enable == 1" />
+		<event name="%%Room2_Light2_Name%% Level Changed" tag="ROOM2_LIGHT2_LEVEL" condition="$Room2_Light2_Enable == 1 and $Room2_Light2_IsDimmer == 1" />
+		<event name="%%Room2_Light3_Name%% Turned On" tag="ROOM2_LIGHT3_ON" condition="$Room2_Light3_Enable == 1" />
+		<event name="%%Room2_Light3_Name%% Turned Off" tag="ROOM2_LIGHT3_OFF" condition="$Room2_Light3_Enable == 1" />
+		<event name="%%Room2_Light3_Name%% Level Changed" tag="ROOM2_LIGHT3_LEVEL" condition="$Room2_Light3_Enable == 1 and $Room2_Light3_IsDimmer == 1" />
+		<event name="%%Room2_Light4_Name%% Turned On" tag="ROOM2_LIGHT4_ON" condition="$Room2_Light4_Enable == 1" />
+		<event name="%%Room2_Light4_Name%% Turned Off" tag="ROOM2_LIGHT4_OFF" condition="$Room2_Light4_Enable == 1" />
+		<event name="%%Room2_Light4_Name%% Level Changed" tag="ROOM2_LIGHT4_LEVEL" condition="$Room2_Light4_Enable == 1 and $Room2_Light4_IsDimmer == 1" />
+		<event name="%%Room2_Light5_Name%% Turned On" tag="ROOM2_LIGHT5_ON" condition="$Room2_Light5_Enable == 1" />
+		<event name="%%Room2_Light5_Name%% Turned Off" tag="ROOM2_LIGHT5_OFF" condition="$Room2_Light5_Enable == 1" />
+		<event name="%%Room2_Light5_Name%% Level Changed" tag="ROOM2_LIGHT5_LEVEL" condition="$Room2_Light5_Enable == 1 and $Room2_Light5_IsDimmer == 1" />
+		<event name="%%Room2_Light6_Name%% Turned On" tag="ROOM2_LIGHT6_ON" condition="$Room2_Light6_Enable == 1" />
+		<event name="%%Room2_Light6_Name%% Turned Off" tag="ROOM2_LIGHT6_OFF" condition="$Room2_Light6_Enable == 1" />
+		<event name="%%Room2_Light6_Name%% Level Changed" tag="ROOM2_LIGHT6_LEVEL" condition="$Room2_Light6_Enable == 1 and $Room2_Light6_IsDimmer == 1" />
+		<event name="%%Room2_Light7_Name%% Turned On" tag="ROOM2_LIGHT7_ON" condition="$Room2_Light7_Enable == 1" />
+		<event name="%%Room2_Light7_Name%% Turned Off" tag="ROOM2_LIGHT7_OFF" condition="$Room2_Light7_Enable == 1" />
+		<event name="%%Room2_Light7_Name%% Level Changed" tag="ROOM2_LIGHT7_LEVEL" condition="$Room2_Light7_Enable == 1 and $Room2_Light7_IsDimmer == 1" />
+		<event name="%%Room2_Light8_Name%% Turned On" tag="ROOM2_LIGHT8_ON" condition="$Room2_Light8_Enable == 1" />
+		<event name="%%Room2_Light8_Name%% Turned Off" tag="ROOM2_LIGHT8_OFF" condition="$Room2_Light8_Enable == 1" />
+		<event name="%%Room2_Light8_Name%% Level Changed" tag="ROOM2_LIGHT8_LEVEL" condition="$Room2_Light8_Enable == 1 and $Room2_Light8_IsDimmer == 1" />
+		<event name="%%Room2_Light9_Name%% Turned On" tag="ROOM2_LIGHT9_ON" condition="$Room2_Light9_Enable == 1" />
+		<event name="%%Room2_Light9_Name%% Turned Off" tag="ROOM2_LIGHT9_OFF" condition="$Room2_Light9_Enable == 1" />
+		<event name="%%Room2_Light9_Name%% Level Changed" tag="ROOM2_LIGHT9_LEVEL" condition="$Room2_Light9_Enable == 1 and $Room2_Light9_IsDimmer == 1" />
+		<event name="%%Room2_Light10_Name%% Turned On" tag="ROOM2_LIGHT10_ON" condition="$Room2_Light10_Enable == 1" />
+		<event name="%%Room2_Light10_Name%% Turned Off" tag="ROOM2_LIGHT10_OFF" condition="$Room2_Light10_Enable == 1" />
+		<event name="%%Room2_Light10_Name%% Level Changed" tag="ROOM2_LIGHT10_LEVEL" condition="$Room2_Light10_Enable == 1 and $Room2_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 2 Scene Events -->
+	<category name="%%Room2_Name%% Scenes" condition="$Room2_Enable == 1">
+		<event name="%%Room2_Scene1_Name%% Activated" tag="ROOM2_SCENE1_ACTIVATED" condition="$Room2_Scene1_Enable == 1" />
+		<event name="%%Room2_Scene2_Name%% Activated" tag="ROOM2_SCENE2_ACTIVATED" condition="$Room2_Scene2_Enable == 1" />
+		<event name="%%Room2_Scene3_Name%% Activated" tag="ROOM2_SCENE3_ACTIVATED" condition="$Room2_Scene3_Enable == 1" />
+		<event name="%%Room2_Scene4_Name%% Activated" tag="ROOM2_SCENE4_ACTIVATED" condition="$Room2_Scene4_Enable == 1" />
+		<event name="%%Room2_Scene5_Name%% Activated" tag="ROOM2_SCENE5_ACTIVATED" condition="$Room2_Scene5_Enable == 1" />
+		<event name="%%Room2_Scene6_Name%% Activated" tag="ROOM2_SCENE6_ACTIVATED" condition="$Room2_Scene6_Enable == 1" />
+		<event name="%%Room2_Scene7_Name%% Activated" tag="ROOM2_SCENE7_ACTIVATED" condition="$Room2_Scene7_Enable == 1" />
+		<event name="%%Room2_Scene8_Name%% Activated" tag="ROOM2_SCENE8_ACTIVATED" condition="$Room2_Scene8_Enable == 1" />
+		<event name="%%Room2_Scene9_Name%% Activated" tag="ROOM2_SCENE9_ACTIVATED" condition="$Room2_Scene9_Enable == 1" />
+		<event name="%%Room2_Scene10_Name%% Activated" tag="ROOM2_SCENE10_ACTIVATED" condition="$Room2_Scene10_Enable == 1" />
+		<event name="%%Room2_Scene11_Name%% Activated" tag="ROOM2_SCENE11_ACTIVATED" condition="$Room2_Scene11_Enable == 1" />
+		<event name="%%Room2_Scene12_Name%% Activated" tag="ROOM2_SCENE12_ACTIVATED" condition="$Room2_Scene12_Enable == 1" />
+		<event name="%%Room2_Scene13_Name%% Activated" tag="ROOM2_SCENE13_ACTIVATED" condition="$Room2_Scene13_Enable == 1" />
+		<event name="%%Room2_Scene14_Name%% Activated" tag="ROOM2_SCENE14_ACTIVATED" condition="$Room2_Scene14_Enable == 1" />
+		<event name="%%Room2_Scene15_Name%% Activated" tag="ROOM2_SCENE15_ACTIVATED" condition="$Room2_Scene15_Enable == 1" />
+		<event name="%%Room2_Scene16_Name%% Activated" tag="ROOM2_SCENE16_ACTIVATED" condition="$Room2_Scene16_Enable == 1" />
+		<event name="%%Room2_Scene17_Name%% Activated" tag="ROOM2_SCENE17_ACTIVATED" condition="$Room2_Scene17_Enable == 1" />
+		<event name="%%Room2_Scene18_Name%% Activated" tag="ROOM2_SCENE18_ACTIVATED" condition="$Room2_Scene18_Enable == 1" />
+		<event name="%%Room2_Scene19_Name%% Activated" tag="ROOM2_SCENE19_ACTIVATED" condition="$Room2_Scene19_Enable == 1" />
+		<event name="%%Room2_Scene20_Name%% Activated" tag="ROOM2_SCENE20_ACTIVATED" condition="$Room2_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 3 Light Events -->
+	<category name="%%Room3_Name%% Lights" condition="$Room3_Enable == 1">
+		<event name="%%Room3_Light1_Name%% Turned On" tag="ROOM3_LIGHT1_ON" condition="$Room3_Light1_Enable == 1" />
+		<event name="%%Room3_Light1_Name%% Turned Off" tag="ROOM3_LIGHT1_OFF" condition="$Room3_Light1_Enable == 1" />
+		<event name="%%Room3_Light1_Name%% Level Changed" tag="ROOM3_LIGHT1_LEVEL" condition="$Room3_Light1_Enable == 1 and $Room3_Light1_IsDimmer == 1" />
+		<event name="%%Room3_Light2_Name%% Turned On" tag="ROOM3_LIGHT2_ON" condition="$Room3_Light2_Enable == 1" />
+		<event name="%%Room3_Light2_Name%% Turned Off" tag="ROOM3_LIGHT2_OFF" condition="$Room3_Light2_Enable == 1" />
+		<event name="%%Room3_Light2_Name%% Level Changed" tag="ROOM3_LIGHT2_LEVEL" condition="$Room3_Light2_Enable == 1 and $Room3_Light2_IsDimmer == 1" />
+		<event name="%%Room3_Light3_Name%% Turned On" tag="ROOM3_LIGHT3_ON" condition="$Room3_Light3_Enable == 1" />
+		<event name="%%Room3_Light3_Name%% Turned Off" tag="ROOM3_LIGHT3_OFF" condition="$Room3_Light3_Enable == 1" />
+		<event name="%%Room3_Light3_Name%% Level Changed" tag="ROOM3_LIGHT3_LEVEL" condition="$Room3_Light3_Enable == 1 and $Room3_Light3_IsDimmer == 1" />
+		<event name="%%Room3_Light4_Name%% Turned On" tag="ROOM3_LIGHT4_ON" condition="$Room3_Light4_Enable == 1" />
+		<event name="%%Room3_Light4_Name%% Turned Off" tag="ROOM3_LIGHT4_OFF" condition="$Room3_Light4_Enable == 1" />
+		<event name="%%Room3_Light4_Name%% Level Changed" tag="ROOM3_LIGHT4_LEVEL" condition="$Room3_Light4_Enable == 1 and $Room3_Light4_IsDimmer == 1" />
+		<event name="%%Room3_Light5_Name%% Turned On" tag="ROOM3_LIGHT5_ON" condition="$Room3_Light5_Enable == 1" />
+		<event name="%%Room3_Light5_Name%% Turned Off" tag="ROOM3_LIGHT5_OFF" condition="$Room3_Light5_Enable == 1" />
+		<event name="%%Room3_Light5_Name%% Level Changed" tag="ROOM3_LIGHT5_LEVEL" condition="$Room3_Light5_Enable == 1 and $Room3_Light5_IsDimmer == 1" />
+		<event name="%%Room3_Light6_Name%% Turned On" tag="ROOM3_LIGHT6_ON" condition="$Room3_Light6_Enable == 1" />
+		<event name="%%Room3_Light6_Name%% Turned Off" tag="ROOM3_LIGHT6_OFF" condition="$Room3_Light6_Enable == 1" />
+		<event name="%%Room3_Light6_Name%% Level Changed" tag="ROOM3_LIGHT6_LEVEL" condition="$Room3_Light6_Enable == 1 and $Room3_Light6_IsDimmer == 1" />
+		<event name="%%Room3_Light7_Name%% Turned On" tag="ROOM3_LIGHT7_ON" condition="$Room3_Light7_Enable == 1" />
+		<event name="%%Room3_Light7_Name%% Turned Off" tag="ROOM3_LIGHT7_OFF" condition="$Room3_Light7_Enable == 1" />
+		<event name="%%Room3_Light7_Name%% Level Changed" tag="ROOM3_LIGHT7_LEVEL" condition="$Room3_Light7_Enable == 1 and $Room3_Light7_IsDimmer == 1" />
+		<event name="%%Room3_Light8_Name%% Turned On" tag="ROOM3_LIGHT8_ON" condition="$Room3_Light8_Enable == 1" />
+		<event name="%%Room3_Light8_Name%% Turned Off" tag="ROOM3_LIGHT8_OFF" condition="$Room3_Light8_Enable == 1" />
+		<event name="%%Room3_Light8_Name%% Level Changed" tag="ROOM3_LIGHT8_LEVEL" condition="$Room3_Light8_Enable == 1 and $Room3_Light8_IsDimmer == 1" />
+		<event name="%%Room3_Light9_Name%% Turned On" tag="ROOM3_LIGHT9_ON" condition="$Room3_Light9_Enable == 1" />
+		<event name="%%Room3_Light9_Name%% Turned Off" tag="ROOM3_LIGHT9_OFF" condition="$Room3_Light9_Enable == 1" />
+		<event name="%%Room3_Light9_Name%% Level Changed" tag="ROOM3_LIGHT9_LEVEL" condition="$Room3_Light9_Enable == 1 and $Room3_Light9_IsDimmer == 1" />
+		<event name="%%Room3_Light10_Name%% Turned On" tag="ROOM3_LIGHT10_ON" condition="$Room3_Light10_Enable == 1" />
+		<event name="%%Room3_Light10_Name%% Turned Off" tag="ROOM3_LIGHT10_OFF" condition="$Room3_Light10_Enable == 1" />
+		<event name="%%Room3_Light10_Name%% Level Changed" tag="ROOM3_LIGHT10_LEVEL" condition="$Room3_Light10_Enable == 1 and $Room3_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 3 Scene Events -->
+	<category name="%%Room3_Name%% Scenes" condition="$Room3_Enable == 1">
+		<event name="%%Room3_Scene1_Name%% Activated" tag="ROOM3_SCENE1_ACTIVATED" condition="$Room3_Scene1_Enable == 1" />
+		<event name="%%Room3_Scene2_Name%% Activated" tag="ROOM3_SCENE2_ACTIVATED" condition="$Room3_Scene2_Enable == 1" />
+		<event name="%%Room3_Scene3_Name%% Activated" tag="ROOM3_SCENE3_ACTIVATED" condition="$Room3_Scene3_Enable == 1" />
+		<event name="%%Room3_Scene4_Name%% Activated" tag="ROOM3_SCENE4_ACTIVATED" condition="$Room3_Scene4_Enable == 1" />
+		<event name="%%Room3_Scene5_Name%% Activated" tag="ROOM3_SCENE5_ACTIVATED" condition="$Room3_Scene5_Enable == 1" />
+		<event name="%%Room3_Scene6_Name%% Activated" tag="ROOM3_SCENE6_ACTIVATED" condition="$Room3_Scene6_Enable == 1" />
+		<event name="%%Room3_Scene7_Name%% Activated" tag="ROOM3_SCENE7_ACTIVATED" condition="$Room3_Scene7_Enable == 1" />
+		<event name="%%Room3_Scene8_Name%% Activated" tag="ROOM3_SCENE8_ACTIVATED" condition="$Room3_Scene8_Enable == 1" />
+		<event name="%%Room3_Scene9_Name%% Activated" tag="ROOM3_SCENE9_ACTIVATED" condition="$Room3_Scene9_Enable == 1" />
+		<event name="%%Room3_Scene10_Name%% Activated" tag="ROOM3_SCENE10_ACTIVATED" condition="$Room3_Scene10_Enable == 1" />
+		<event name="%%Room3_Scene11_Name%% Activated" tag="ROOM3_SCENE11_ACTIVATED" condition="$Room3_Scene11_Enable == 1" />
+		<event name="%%Room3_Scene12_Name%% Activated" tag="ROOM3_SCENE12_ACTIVATED" condition="$Room3_Scene12_Enable == 1" />
+		<event name="%%Room3_Scene13_Name%% Activated" tag="ROOM3_SCENE13_ACTIVATED" condition="$Room3_Scene13_Enable == 1" />
+		<event name="%%Room3_Scene14_Name%% Activated" tag="ROOM3_SCENE14_ACTIVATED" condition="$Room3_Scene14_Enable == 1" />
+		<event name="%%Room3_Scene15_Name%% Activated" tag="ROOM3_SCENE15_ACTIVATED" condition="$Room3_Scene15_Enable == 1" />
+		<event name="%%Room3_Scene16_Name%% Activated" tag="ROOM3_SCENE16_ACTIVATED" condition="$Room3_Scene16_Enable == 1" />
+		<event name="%%Room3_Scene17_Name%% Activated" tag="ROOM3_SCENE17_ACTIVATED" condition="$Room3_Scene17_Enable == 1" />
+		<event name="%%Room3_Scene18_Name%% Activated" tag="ROOM3_SCENE18_ACTIVATED" condition="$Room3_Scene18_Enable == 1" />
+		<event name="%%Room3_Scene19_Name%% Activated" tag="ROOM3_SCENE19_ACTIVATED" condition="$Room3_Scene19_Enable == 1" />
+		<event name="%%Room3_Scene20_Name%% Activated" tag="ROOM3_SCENE20_ACTIVATED" condition="$Room3_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 4 Light Events -->
+	<category name="%%Room4_Name%% Lights" condition="$Room4_Enable == 1">
+		<event name="%%Room4_Light1_Name%% Turned On" tag="ROOM4_LIGHT1_ON" condition="$Room4_Light1_Enable == 1" />
+		<event name="%%Room4_Light1_Name%% Turned Off" tag="ROOM4_LIGHT1_OFF" condition="$Room4_Light1_Enable == 1" />
+		<event name="%%Room4_Light1_Name%% Level Changed" tag="ROOM4_LIGHT1_LEVEL" condition="$Room4_Light1_Enable == 1 and $Room4_Light1_IsDimmer == 1" />
+		<event name="%%Room4_Light2_Name%% Turned On" tag="ROOM4_LIGHT2_ON" condition="$Room4_Light2_Enable == 1" />
+		<event name="%%Room4_Light2_Name%% Turned Off" tag="ROOM4_LIGHT2_OFF" condition="$Room4_Light2_Enable == 1" />
+		<event name="%%Room4_Light2_Name%% Level Changed" tag="ROOM4_LIGHT2_LEVEL" condition="$Room4_Light2_Enable == 1 and $Room4_Light2_IsDimmer == 1" />
+		<event name="%%Room4_Light3_Name%% Turned On" tag="ROOM4_LIGHT3_ON" condition="$Room4_Light3_Enable == 1" />
+		<event name="%%Room4_Light3_Name%% Turned Off" tag="ROOM4_LIGHT3_OFF" condition="$Room4_Light3_Enable == 1" />
+		<event name="%%Room4_Light3_Name%% Level Changed" tag="ROOM4_LIGHT3_LEVEL" condition="$Room4_Light3_Enable == 1 and $Room4_Light3_IsDimmer == 1" />
+		<event name="%%Room4_Light4_Name%% Turned On" tag="ROOM4_LIGHT4_ON" condition="$Room4_Light4_Enable == 1" />
+		<event name="%%Room4_Light4_Name%% Turned Off" tag="ROOM4_LIGHT4_OFF" condition="$Room4_Light4_Enable == 1" />
+		<event name="%%Room4_Light4_Name%% Level Changed" tag="ROOM4_LIGHT4_LEVEL" condition="$Room4_Light4_Enable == 1 and $Room4_Light4_IsDimmer == 1" />
+		<event name="%%Room4_Light5_Name%% Turned On" tag="ROOM4_LIGHT5_ON" condition="$Room4_Light5_Enable == 1" />
+		<event name="%%Room4_Light5_Name%% Turned Off" tag="ROOM4_LIGHT5_OFF" condition="$Room4_Light5_Enable == 1" />
+		<event name="%%Room4_Light5_Name%% Level Changed" tag="ROOM4_LIGHT5_LEVEL" condition="$Room4_Light5_Enable == 1 and $Room4_Light5_IsDimmer == 1" />
+		<event name="%%Room4_Light6_Name%% Turned On" tag="ROOM4_LIGHT6_ON" condition="$Room4_Light6_Enable == 1" />
+		<event name="%%Room4_Light6_Name%% Turned Off" tag="ROOM4_LIGHT6_OFF" condition="$Room4_Light6_Enable == 1" />
+		<event name="%%Room4_Light6_Name%% Level Changed" tag="ROOM4_LIGHT6_LEVEL" condition="$Room4_Light6_Enable == 1 and $Room4_Light6_IsDimmer == 1" />
+		<event name="%%Room4_Light7_Name%% Turned On" tag="ROOM4_LIGHT7_ON" condition="$Room4_Light7_Enable == 1" />
+		<event name="%%Room4_Light7_Name%% Turned Off" tag="ROOM4_LIGHT7_OFF" condition="$Room4_Light7_Enable == 1" />
+		<event name="%%Room4_Light7_Name%% Level Changed" tag="ROOM4_LIGHT7_LEVEL" condition="$Room4_Light7_Enable == 1 and $Room4_Light7_IsDimmer == 1" />
+		<event name="%%Room4_Light8_Name%% Turned On" tag="ROOM4_LIGHT8_ON" condition="$Room4_Light8_Enable == 1" />
+		<event name="%%Room4_Light8_Name%% Turned Off" tag="ROOM4_LIGHT8_OFF" condition="$Room4_Light8_Enable == 1" />
+		<event name="%%Room4_Light8_Name%% Level Changed" tag="ROOM4_LIGHT8_LEVEL" condition="$Room4_Light8_Enable == 1 and $Room4_Light8_IsDimmer == 1" />
+		<event name="%%Room4_Light9_Name%% Turned On" tag="ROOM4_LIGHT9_ON" condition="$Room4_Light9_Enable == 1" />
+		<event name="%%Room4_Light9_Name%% Turned Off" tag="ROOM4_LIGHT9_OFF" condition="$Room4_Light9_Enable == 1" />
+		<event name="%%Room4_Light9_Name%% Level Changed" tag="ROOM4_LIGHT9_LEVEL" condition="$Room4_Light9_Enable == 1 and $Room4_Light9_IsDimmer == 1" />
+		<event name="%%Room4_Light10_Name%% Turned On" tag="ROOM4_LIGHT10_ON" condition="$Room4_Light10_Enable == 1" />
+		<event name="%%Room4_Light10_Name%% Turned Off" tag="ROOM4_LIGHT10_OFF" condition="$Room4_Light10_Enable == 1" />
+		<event name="%%Room4_Light10_Name%% Level Changed" tag="ROOM4_LIGHT10_LEVEL" condition="$Room4_Light10_Enable == 1 and $Room4_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 4 Scene Events -->
+	<category name="%%Room4_Name%% Scenes" condition="$Room4_Enable == 1">
+		<event name="%%Room4_Scene1_Name%% Activated" tag="ROOM4_SCENE1_ACTIVATED" condition="$Room4_Scene1_Enable == 1" />
+		<event name="%%Room4_Scene2_Name%% Activated" tag="ROOM4_SCENE2_ACTIVATED" condition="$Room4_Scene2_Enable == 1" />
+		<event name="%%Room4_Scene3_Name%% Activated" tag="ROOM4_SCENE3_ACTIVATED" condition="$Room4_Scene3_Enable == 1" />
+		<event name="%%Room4_Scene4_Name%% Activated" tag="ROOM4_SCENE4_ACTIVATED" condition="$Room4_Scene4_Enable == 1" />
+		<event name="%%Room4_Scene5_Name%% Activated" tag="ROOM4_SCENE5_ACTIVATED" condition="$Room4_Scene5_Enable == 1" />
+		<event name="%%Room4_Scene6_Name%% Activated" tag="ROOM4_SCENE6_ACTIVATED" condition="$Room4_Scene6_Enable == 1" />
+		<event name="%%Room4_Scene7_Name%% Activated" tag="ROOM4_SCENE7_ACTIVATED" condition="$Room4_Scene7_Enable == 1" />
+		<event name="%%Room4_Scene8_Name%% Activated" tag="ROOM4_SCENE8_ACTIVATED" condition="$Room4_Scene8_Enable == 1" />
+		<event name="%%Room4_Scene9_Name%% Activated" tag="ROOM4_SCENE9_ACTIVATED" condition="$Room4_Scene9_Enable == 1" />
+		<event name="%%Room4_Scene10_Name%% Activated" tag="ROOM4_SCENE10_ACTIVATED" condition="$Room4_Scene10_Enable == 1" />
+		<event name="%%Room4_Scene11_Name%% Activated" tag="ROOM4_SCENE11_ACTIVATED" condition="$Room4_Scene11_Enable == 1" />
+		<event name="%%Room4_Scene12_Name%% Activated" tag="ROOM4_SCENE12_ACTIVATED" condition="$Room4_Scene12_Enable == 1" />
+		<event name="%%Room4_Scene13_Name%% Activated" tag="ROOM4_SCENE13_ACTIVATED" condition="$Room4_Scene13_Enable == 1" />
+		<event name="%%Room4_Scene14_Name%% Activated" tag="ROOM4_SCENE14_ACTIVATED" condition="$Room4_Scene14_Enable == 1" />
+		<event name="%%Room4_Scene15_Name%% Activated" tag="ROOM4_SCENE15_ACTIVATED" condition="$Room4_Scene15_Enable == 1" />
+		<event name="%%Room4_Scene16_Name%% Activated" tag="ROOM4_SCENE16_ACTIVATED" condition="$Room4_Scene16_Enable == 1" />
+		<event name="%%Room4_Scene17_Name%% Activated" tag="ROOM4_SCENE17_ACTIVATED" condition="$Room4_Scene17_Enable == 1" />
+		<event name="%%Room4_Scene18_Name%% Activated" tag="ROOM4_SCENE18_ACTIVATED" condition="$Room4_Scene18_Enable == 1" />
+		<event name="%%Room4_Scene19_Name%% Activated" tag="ROOM4_SCENE19_ACTIVATED" condition="$Room4_Scene19_Enable == 1" />
+		<event name="%%Room4_Scene20_Name%% Activated" tag="ROOM4_SCENE20_ACTIVATED" condition="$Room4_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 5 Light Events -->
+	<category name="%%Room5_Name%% Lights" condition="$Room5_Enable == 1">
+		<event name="%%Room5_Light1_Name%% Turned On" tag="ROOM5_LIGHT1_ON" condition="$Room5_Light1_Enable == 1" />
+		<event name="%%Room5_Light1_Name%% Turned Off" tag="ROOM5_LIGHT1_OFF" condition="$Room5_Light1_Enable == 1" />
+		<event name="%%Room5_Light1_Name%% Level Changed" tag="ROOM5_LIGHT1_LEVEL" condition="$Room5_Light1_Enable == 1 and $Room5_Light1_IsDimmer == 1" />
+		<event name="%%Room5_Light2_Name%% Turned On" tag="ROOM5_LIGHT2_ON" condition="$Room5_Light2_Enable == 1" />
+		<event name="%%Room5_Light2_Name%% Turned Off" tag="ROOM5_LIGHT2_OFF" condition="$Room5_Light2_Enable == 1" />
+		<event name="%%Room5_Light2_Name%% Level Changed" tag="ROOM5_LIGHT2_LEVEL" condition="$Room5_Light2_Enable == 1 and $Room5_Light2_IsDimmer == 1" />
+		<event name="%%Room5_Light3_Name%% Turned On" tag="ROOM5_LIGHT3_ON" condition="$Room5_Light3_Enable == 1" />
+		<event name="%%Room5_Light3_Name%% Turned Off" tag="ROOM5_LIGHT3_OFF" condition="$Room5_Light3_Enable == 1" />
+		<event name="%%Room5_Light3_Name%% Level Changed" tag="ROOM5_LIGHT3_LEVEL" condition="$Room5_Light3_Enable == 1 and $Room5_Light3_IsDimmer == 1" />
+		<event name="%%Room5_Light4_Name%% Turned On" tag="ROOM5_LIGHT4_ON" condition="$Room5_Light4_Enable == 1" />
+		<event name="%%Room5_Light4_Name%% Turned Off" tag="ROOM5_LIGHT4_OFF" condition="$Room5_Light4_Enable == 1" />
+		<event name="%%Room5_Light4_Name%% Level Changed" tag="ROOM5_LIGHT4_LEVEL" condition="$Room5_Light4_Enable == 1 and $Room5_Light4_IsDimmer == 1" />
+		<event name="%%Room5_Light5_Name%% Turned On" tag="ROOM5_LIGHT5_ON" condition="$Room5_Light5_Enable == 1" />
+		<event name="%%Room5_Light5_Name%% Turned Off" tag="ROOM5_LIGHT5_OFF" condition="$Room5_Light5_Enable == 1" />
+		<event name="%%Room5_Light5_Name%% Level Changed" tag="ROOM5_LIGHT5_LEVEL" condition="$Room5_Light5_Enable == 1 and $Room5_Light5_IsDimmer == 1" />
+		<event name="%%Room5_Light6_Name%% Turned On" tag="ROOM5_LIGHT6_ON" condition="$Room5_Light6_Enable == 1" />
+		<event name="%%Room5_Light6_Name%% Turned Off" tag="ROOM5_LIGHT6_OFF" condition="$Room5_Light6_Enable == 1" />
+		<event name="%%Room5_Light6_Name%% Level Changed" tag="ROOM5_LIGHT6_LEVEL" condition="$Room5_Light6_Enable == 1 and $Room5_Light6_IsDimmer == 1" />
+		<event name="%%Room5_Light7_Name%% Turned On" tag="ROOM5_LIGHT7_ON" condition="$Room5_Light7_Enable == 1" />
+		<event name="%%Room5_Light7_Name%% Turned Off" tag="ROOM5_LIGHT7_OFF" condition="$Room5_Light7_Enable == 1" />
+		<event name="%%Room5_Light7_Name%% Level Changed" tag="ROOM5_LIGHT7_LEVEL" condition="$Room5_Light7_Enable == 1 and $Room5_Light7_IsDimmer == 1" />
+		<event name="%%Room5_Light8_Name%% Turned On" tag="ROOM5_LIGHT8_ON" condition="$Room5_Light8_Enable == 1" />
+		<event name="%%Room5_Light8_Name%% Turned Off" tag="ROOM5_LIGHT8_OFF" condition="$Room5_Light8_Enable == 1" />
+		<event name="%%Room5_Light8_Name%% Level Changed" tag="ROOM5_LIGHT8_LEVEL" condition="$Room5_Light8_Enable == 1 and $Room5_Light8_IsDimmer == 1" />
+		<event name="%%Room5_Light9_Name%% Turned On" tag="ROOM5_LIGHT9_ON" condition="$Room5_Light9_Enable == 1" />
+		<event name="%%Room5_Light9_Name%% Turned Off" tag="ROOM5_LIGHT9_OFF" condition="$Room5_Light9_Enable == 1" />
+		<event name="%%Room5_Light9_Name%% Level Changed" tag="ROOM5_LIGHT9_LEVEL" condition="$Room5_Light9_Enable == 1 and $Room5_Light9_IsDimmer == 1" />
+		<event name="%%Room5_Light10_Name%% Turned On" tag="ROOM5_LIGHT10_ON" condition="$Room5_Light10_Enable == 1" />
+		<event name="%%Room5_Light10_Name%% Turned Off" tag="ROOM5_LIGHT10_OFF" condition="$Room5_Light10_Enable == 1" />
+		<event name="%%Room5_Light10_Name%% Level Changed" tag="ROOM5_LIGHT10_LEVEL" condition="$Room5_Light10_Enable == 1 and $Room5_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 5 Scene Events -->
+	<category name="%%Room5_Name%% Scenes" condition="$Room5_Enable == 1">
+		<event name="%%Room5_Scene1_Name%% Activated" tag="ROOM5_SCENE1_ACTIVATED" condition="$Room5_Scene1_Enable == 1" />
+		<event name="%%Room5_Scene2_Name%% Activated" tag="ROOM5_SCENE2_ACTIVATED" condition="$Room5_Scene2_Enable == 1" />
+		<event name="%%Room5_Scene3_Name%% Activated" tag="ROOM5_SCENE3_ACTIVATED" condition="$Room5_Scene3_Enable == 1" />
+		<event name="%%Room5_Scene4_Name%% Activated" tag="ROOM5_SCENE4_ACTIVATED" condition="$Room5_Scene4_Enable == 1" />
+		<event name="%%Room5_Scene5_Name%% Activated" tag="ROOM5_SCENE5_ACTIVATED" condition="$Room5_Scene5_Enable == 1" />
+		<event name="%%Room5_Scene6_Name%% Activated" tag="ROOM5_SCENE6_ACTIVATED" condition="$Room5_Scene6_Enable == 1" />
+		<event name="%%Room5_Scene7_Name%% Activated" tag="ROOM5_SCENE7_ACTIVATED" condition="$Room5_Scene7_Enable == 1" />
+		<event name="%%Room5_Scene8_Name%% Activated" tag="ROOM5_SCENE8_ACTIVATED" condition="$Room5_Scene8_Enable == 1" />
+		<event name="%%Room5_Scene9_Name%% Activated" tag="ROOM5_SCENE9_ACTIVATED" condition="$Room5_Scene9_Enable == 1" />
+		<event name="%%Room5_Scene10_Name%% Activated" tag="ROOM5_SCENE10_ACTIVATED" condition="$Room5_Scene10_Enable == 1" />
+		<event name="%%Room5_Scene11_Name%% Activated" tag="ROOM5_SCENE11_ACTIVATED" condition="$Room5_Scene11_Enable == 1" />
+		<event name="%%Room5_Scene12_Name%% Activated" tag="ROOM5_SCENE12_ACTIVATED" condition="$Room5_Scene12_Enable == 1" />
+		<event name="%%Room5_Scene13_Name%% Activated" tag="ROOM5_SCENE13_ACTIVATED" condition="$Room5_Scene13_Enable == 1" />
+		<event name="%%Room5_Scene14_Name%% Activated" tag="ROOM5_SCENE14_ACTIVATED" condition="$Room5_Scene14_Enable == 1" />
+		<event name="%%Room5_Scene15_Name%% Activated" tag="ROOM5_SCENE15_ACTIVATED" condition="$Room5_Scene15_Enable == 1" />
+		<event name="%%Room5_Scene16_Name%% Activated" tag="ROOM5_SCENE16_ACTIVATED" condition="$Room5_Scene16_Enable == 1" />
+		<event name="%%Room5_Scene17_Name%% Activated" tag="ROOM5_SCENE17_ACTIVATED" condition="$Room5_Scene17_Enable == 1" />
+		<event name="%%Room5_Scene18_Name%% Activated" tag="ROOM5_SCENE18_ACTIVATED" condition="$Room5_Scene18_Enable == 1" />
+		<event name="%%Room5_Scene19_Name%% Activated" tag="ROOM5_SCENE19_ACTIVATED" condition="$Room5_Scene19_Enable == 1" />
+		<event name="%%Room5_Scene20_Name%% Activated" tag="ROOM5_SCENE20_ACTIVATED" condition="$Room5_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 6 Light Events -->
+	<category name="%%Room6_Name%% Lights" condition="$Room6_Enable == 1">
+		<event name="%%Room6_Light1_Name%% Turned On" tag="ROOM6_LIGHT1_ON" condition="$Room6_Light1_Enable == 1" />
+		<event name="%%Room6_Light1_Name%% Turned Off" tag="ROOM6_LIGHT1_OFF" condition="$Room6_Light1_Enable == 1" />
+		<event name="%%Room6_Light1_Name%% Level Changed" tag="ROOM6_LIGHT1_LEVEL" condition="$Room6_Light1_Enable == 1 and $Room6_Light1_IsDimmer == 1" />
+		<event name="%%Room6_Light2_Name%% Turned On" tag="ROOM6_LIGHT2_ON" condition="$Room6_Light2_Enable == 1" />
+		<event name="%%Room6_Light2_Name%% Turned Off" tag="ROOM6_LIGHT2_OFF" condition="$Room6_Light2_Enable == 1" />
+		<event name="%%Room6_Light2_Name%% Level Changed" tag="ROOM6_LIGHT2_LEVEL" condition="$Room6_Light2_Enable == 1 and $Room6_Light2_IsDimmer == 1" />
+		<event name="%%Room6_Light3_Name%% Turned On" tag="ROOM6_LIGHT3_ON" condition="$Room6_Light3_Enable == 1" />
+		<event name="%%Room6_Light3_Name%% Turned Off" tag="ROOM6_LIGHT3_OFF" condition="$Room6_Light3_Enable == 1" />
+		<event name="%%Room6_Light3_Name%% Level Changed" tag="ROOM6_LIGHT3_LEVEL" condition="$Room6_Light3_Enable == 1 and $Room6_Light3_IsDimmer == 1" />
+		<event name="%%Room6_Light4_Name%% Turned On" tag="ROOM6_LIGHT4_ON" condition="$Room6_Light4_Enable == 1" />
+		<event name="%%Room6_Light4_Name%% Turned Off" tag="ROOM6_LIGHT4_OFF" condition="$Room6_Light4_Enable == 1" />
+		<event name="%%Room6_Light4_Name%% Level Changed" tag="ROOM6_LIGHT4_LEVEL" condition="$Room6_Light4_Enable == 1 and $Room6_Light4_IsDimmer == 1" />
+		<event name="%%Room6_Light5_Name%% Turned On" tag="ROOM6_LIGHT5_ON" condition="$Room6_Light5_Enable == 1" />
+		<event name="%%Room6_Light5_Name%% Turned Off" tag="ROOM6_LIGHT5_OFF" condition="$Room6_Light5_Enable == 1" />
+		<event name="%%Room6_Light5_Name%% Level Changed" tag="ROOM6_LIGHT5_LEVEL" condition="$Room6_Light5_Enable == 1 and $Room6_Light5_IsDimmer == 1" />
+		<event name="%%Room6_Light6_Name%% Turned On" tag="ROOM6_LIGHT6_ON" condition="$Room6_Light6_Enable == 1" />
+		<event name="%%Room6_Light6_Name%% Turned Off" tag="ROOM6_LIGHT6_OFF" condition="$Room6_Light6_Enable == 1" />
+		<event name="%%Room6_Light6_Name%% Level Changed" tag="ROOM6_LIGHT6_LEVEL" condition="$Room6_Light6_Enable == 1 and $Room6_Light6_IsDimmer == 1" />
+		<event name="%%Room6_Light7_Name%% Turned On" tag="ROOM6_LIGHT7_ON" condition="$Room6_Light7_Enable == 1" />
+		<event name="%%Room6_Light7_Name%% Turned Off" tag="ROOM6_LIGHT7_OFF" condition="$Room6_Light7_Enable == 1" />
+		<event name="%%Room6_Light7_Name%% Level Changed" tag="ROOM6_LIGHT7_LEVEL" condition="$Room6_Light7_Enable == 1 and $Room6_Light7_IsDimmer == 1" />
+		<event name="%%Room6_Light8_Name%% Turned On" tag="ROOM6_LIGHT8_ON" condition="$Room6_Light8_Enable == 1" />
+		<event name="%%Room6_Light8_Name%% Turned Off" tag="ROOM6_LIGHT8_OFF" condition="$Room6_Light8_Enable == 1" />
+		<event name="%%Room6_Light8_Name%% Level Changed" tag="ROOM6_LIGHT8_LEVEL" condition="$Room6_Light8_Enable == 1 and $Room6_Light8_IsDimmer == 1" />
+		<event name="%%Room6_Light9_Name%% Turned On" tag="ROOM6_LIGHT9_ON" condition="$Room6_Light9_Enable == 1" />
+		<event name="%%Room6_Light9_Name%% Turned Off" tag="ROOM6_LIGHT9_OFF" condition="$Room6_Light9_Enable == 1" />
+		<event name="%%Room6_Light9_Name%% Level Changed" tag="ROOM6_LIGHT9_LEVEL" condition="$Room6_Light9_Enable == 1 and $Room6_Light9_IsDimmer == 1" />
+		<event name="%%Room6_Light10_Name%% Turned On" tag="ROOM6_LIGHT10_ON" condition="$Room6_Light10_Enable == 1" />
+		<event name="%%Room6_Light10_Name%% Turned Off" tag="ROOM6_LIGHT10_OFF" condition="$Room6_Light10_Enable == 1" />
+		<event name="%%Room6_Light10_Name%% Level Changed" tag="ROOM6_LIGHT10_LEVEL" condition="$Room6_Light10_Enable == 1 and $Room6_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 6 Scene Events -->
+	<category name="%%Room6_Name%% Scenes" condition="$Room6_Enable == 1">
+		<event name="%%Room6_Scene1_Name%% Activated" tag="ROOM6_SCENE1_ACTIVATED" condition="$Room6_Scene1_Enable == 1" />
+		<event name="%%Room6_Scene2_Name%% Activated" tag="ROOM6_SCENE2_ACTIVATED" condition="$Room6_Scene2_Enable == 1" />
+		<event name="%%Room6_Scene3_Name%% Activated" tag="ROOM6_SCENE3_ACTIVATED" condition="$Room6_Scene3_Enable == 1" />
+		<event name="%%Room6_Scene4_Name%% Activated" tag="ROOM6_SCENE4_ACTIVATED" condition="$Room6_Scene4_Enable == 1" />
+		<event name="%%Room6_Scene5_Name%% Activated" tag="ROOM6_SCENE5_ACTIVATED" condition="$Room6_Scene5_Enable == 1" />
+		<event name="%%Room6_Scene6_Name%% Activated" tag="ROOM6_SCENE6_ACTIVATED" condition="$Room6_Scene6_Enable == 1" />
+		<event name="%%Room6_Scene7_Name%% Activated" tag="ROOM6_SCENE7_ACTIVATED" condition="$Room6_Scene7_Enable == 1" />
+		<event name="%%Room6_Scene8_Name%% Activated" tag="ROOM6_SCENE8_ACTIVATED" condition="$Room6_Scene8_Enable == 1" />
+		<event name="%%Room6_Scene9_Name%% Activated" tag="ROOM6_SCENE9_ACTIVATED" condition="$Room6_Scene9_Enable == 1" />
+		<event name="%%Room6_Scene10_Name%% Activated" tag="ROOM6_SCENE10_ACTIVATED" condition="$Room6_Scene10_Enable == 1" />
+		<event name="%%Room6_Scene11_Name%% Activated" tag="ROOM6_SCENE11_ACTIVATED" condition="$Room6_Scene11_Enable == 1" />
+		<event name="%%Room6_Scene12_Name%% Activated" tag="ROOM6_SCENE12_ACTIVATED" condition="$Room6_Scene12_Enable == 1" />
+		<event name="%%Room6_Scene13_Name%% Activated" tag="ROOM6_SCENE13_ACTIVATED" condition="$Room6_Scene13_Enable == 1" />
+		<event name="%%Room6_Scene14_Name%% Activated" tag="ROOM6_SCENE14_ACTIVATED" condition="$Room6_Scene14_Enable == 1" />
+		<event name="%%Room6_Scene15_Name%% Activated" tag="ROOM6_SCENE15_ACTIVATED" condition="$Room6_Scene15_Enable == 1" />
+		<event name="%%Room6_Scene16_Name%% Activated" tag="ROOM6_SCENE16_ACTIVATED" condition="$Room6_Scene16_Enable == 1" />
+		<event name="%%Room6_Scene17_Name%% Activated" tag="ROOM6_SCENE17_ACTIVATED" condition="$Room6_Scene17_Enable == 1" />
+		<event name="%%Room6_Scene18_Name%% Activated" tag="ROOM6_SCENE18_ACTIVATED" condition="$Room6_Scene18_Enable == 1" />
+		<event name="%%Room6_Scene19_Name%% Activated" tag="ROOM6_SCENE19_ACTIVATED" condition="$Room6_Scene19_Enable == 1" />
+		<event name="%%Room6_Scene20_Name%% Activated" tag="ROOM6_SCENE20_ACTIVATED" condition="$Room6_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 7 Light Events -->
+	<category name="%%Room7_Name%% Lights" condition="$Room7_Enable == 1">
+		<event name="%%Room7_Light1_Name%% Turned On" tag="ROOM7_LIGHT1_ON" condition="$Room7_Light1_Enable == 1" />
+		<event name="%%Room7_Light1_Name%% Turned Off" tag="ROOM7_LIGHT1_OFF" condition="$Room7_Light1_Enable == 1" />
+		<event name="%%Room7_Light1_Name%% Level Changed" tag="ROOM7_LIGHT1_LEVEL" condition="$Room7_Light1_Enable == 1 and $Room7_Light1_IsDimmer == 1" />
+		<event name="%%Room7_Light2_Name%% Turned On" tag="ROOM7_LIGHT2_ON" condition="$Room7_Light2_Enable == 1" />
+		<event name="%%Room7_Light2_Name%% Turned Off" tag="ROOM7_LIGHT2_OFF" condition="$Room7_Light2_Enable == 1" />
+		<event name="%%Room7_Light2_Name%% Level Changed" tag="ROOM7_LIGHT2_LEVEL" condition="$Room7_Light2_Enable == 1 and $Room7_Light2_IsDimmer == 1" />
+		<event name="%%Room7_Light3_Name%% Turned On" tag="ROOM7_LIGHT3_ON" condition="$Room7_Light3_Enable == 1" />
+		<event name="%%Room7_Light3_Name%% Turned Off" tag="ROOM7_LIGHT3_OFF" condition="$Room7_Light3_Enable == 1" />
+		<event name="%%Room7_Light3_Name%% Level Changed" tag="ROOM7_LIGHT3_LEVEL" condition="$Room7_Light3_Enable == 1 and $Room7_Light3_IsDimmer == 1" />
+		<event name="%%Room7_Light4_Name%% Turned On" tag="ROOM7_LIGHT4_ON" condition="$Room7_Light4_Enable == 1" />
+		<event name="%%Room7_Light4_Name%% Turned Off" tag="ROOM7_LIGHT4_OFF" condition="$Room7_Light4_Enable == 1" />
+		<event name="%%Room7_Light4_Name%% Level Changed" tag="ROOM7_LIGHT4_LEVEL" condition="$Room7_Light4_Enable == 1 and $Room7_Light4_IsDimmer == 1" />
+		<event name="%%Room7_Light5_Name%% Turned On" tag="ROOM7_LIGHT5_ON" condition="$Room7_Light5_Enable == 1" />
+		<event name="%%Room7_Light5_Name%% Turned Off" tag="ROOM7_LIGHT5_OFF" condition="$Room7_Light5_Enable == 1" />
+		<event name="%%Room7_Light5_Name%% Level Changed" tag="ROOM7_LIGHT5_LEVEL" condition="$Room7_Light5_Enable == 1 and $Room7_Light5_IsDimmer == 1" />
+		<event name="%%Room7_Light6_Name%% Turned On" tag="ROOM7_LIGHT6_ON" condition="$Room7_Light6_Enable == 1" />
+		<event name="%%Room7_Light6_Name%% Turned Off" tag="ROOM7_LIGHT6_OFF" condition="$Room7_Light6_Enable == 1" />
+		<event name="%%Room7_Light6_Name%% Level Changed" tag="ROOM7_LIGHT6_LEVEL" condition="$Room7_Light6_Enable == 1 and $Room7_Light6_IsDimmer == 1" />
+		<event name="%%Room7_Light7_Name%% Turned On" tag="ROOM7_LIGHT7_ON" condition="$Room7_Light7_Enable == 1" />
+		<event name="%%Room7_Light7_Name%% Turned Off" tag="ROOM7_LIGHT7_OFF" condition="$Room7_Light7_Enable == 1" />
+		<event name="%%Room7_Light7_Name%% Level Changed" tag="ROOM7_LIGHT7_LEVEL" condition="$Room7_Light7_Enable == 1 and $Room7_Light7_IsDimmer == 1" />
+		<event name="%%Room7_Light8_Name%% Turned On" tag="ROOM7_LIGHT8_ON" condition="$Room7_Light8_Enable == 1" />
+		<event name="%%Room7_Light8_Name%% Turned Off" tag="ROOM7_LIGHT8_OFF" condition="$Room7_Light8_Enable == 1" />
+		<event name="%%Room7_Light8_Name%% Level Changed" tag="ROOM7_LIGHT8_LEVEL" condition="$Room7_Light8_Enable == 1 and $Room7_Light8_IsDimmer == 1" />
+		<event name="%%Room7_Light9_Name%% Turned On" tag="ROOM7_LIGHT9_ON" condition="$Room7_Light9_Enable == 1" />
+		<event name="%%Room7_Light9_Name%% Turned Off" tag="ROOM7_LIGHT9_OFF" condition="$Room7_Light9_Enable == 1" />
+		<event name="%%Room7_Light9_Name%% Level Changed" tag="ROOM7_LIGHT9_LEVEL" condition="$Room7_Light9_Enable == 1 and $Room7_Light9_IsDimmer == 1" />
+		<event name="%%Room7_Light10_Name%% Turned On" tag="ROOM7_LIGHT10_ON" condition="$Room7_Light10_Enable == 1" />
+		<event name="%%Room7_Light10_Name%% Turned Off" tag="ROOM7_LIGHT10_OFF" condition="$Room7_Light10_Enable == 1" />
+		<event name="%%Room7_Light10_Name%% Level Changed" tag="ROOM7_LIGHT10_LEVEL" condition="$Room7_Light10_Enable == 1 and $Room7_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 7 Scene Events -->
+	<category name="%%Room7_Name%% Scenes" condition="$Room7_Enable == 1">
+		<event name="%%Room7_Scene1_Name%% Activated" tag="ROOM7_SCENE1_ACTIVATED" condition="$Room7_Scene1_Enable == 1" />
+		<event name="%%Room7_Scene2_Name%% Activated" tag="ROOM7_SCENE2_ACTIVATED" condition="$Room7_Scene2_Enable == 1" />
+		<event name="%%Room7_Scene3_Name%% Activated" tag="ROOM7_SCENE3_ACTIVATED" condition="$Room7_Scene3_Enable == 1" />
+		<event name="%%Room7_Scene4_Name%% Activated" tag="ROOM7_SCENE4_ACTIVATED" condition="$Room7_Scene4_Enable == 1" />
+		<event name="%%Room7_Scene5_Name%% Activated" tag="ROOM7_SCENE5_ACTIVATED" condition="$Room7_Scene5_Enable == 1" />
+		<event name="%%Room7_Scene6_Name%% Activated" tag="ROOM7_SCENE6_ACTIVATED" condition="$Room7_Scene6_Enable == 1" />
+		<event name="%%Room7_Scene7_Name%% Activated" tag="ROOM7_SCENE7_ACTIVATED" condition="$Room7_Scene7_Enable == 1" />
+		<event name="%%Room7_Scene8_Name%% Activated" tag="ROOM7_SCENE8_ACTIVATED" condition="$Room7_Scene8_Enable == 1" />
+		<event name="%%Room7_Scene9_Name%% Activated" tag="ROOM7_SCENE9_ACTIVATED" condition="$Room7_Scene9_Enable == 1" />
+		<event name="%%Room7_Scene10_Name%% Activated" tag="ROOM7_SCENE10_ACTIVATED" condition="$Room7_Scene10_Enable == 1" />
+		<event name="%%Room7_Scene11_Name%% Activated" tag="ROOM7_SCENE11_ACTIVATED" condition="$Room7_Scene11_Enable == 1" />
+		<event name="%%Room7_Scene12_Name%% Activated" tag="ROOM7_SCENE12_ACTIVATED" condition="$Room7_Scene12_Enable == 1" />
+		<event name="%%Room7_Scene13_Name%% Activated" tag="ROOM7_SCENE13_ACTIVATED" condition="$Room7_Scene13_Enable == 1" />
+		<event name="%%Room7_Scene14_Name%% Activated" tag="ROOM7_SCENE14_ACTIVATED" condition="$Room7_Scene14_Enable == 1" />
+		<event name="%%Room7_Scene15_Name%% Activated" tag="ROOM7_SCENE15_ACTIVATED" condition="$Room7_Scene15_Enable == 1" />
+		<event name="%%Room7_Scene16_Name%% Activated" tag="ROOM7_SCENE16_ACTIVATED" condition="$Room7_Scene16_Enable == 1" />
+		<event name="%%Room7_Scene17_Name%% Activated" tag="ROOM7_SCENE17_ACTIVATED" condition="$Room7_Scene17_Enable == 1" />
+		<event name="%%Room7_Scene18_Name%% Activated" tag="ROOM7_SCENE18_ACTIVATED" condition="$Room7_Scene18_Enable == 1" />
+		<event name="%%Room7_Scene19_Name%% Activated" tag="ROOM7_SCENE19_ACTIVATED" condition="$Room7_Scene19_Enable == 1" />
+		<event name="%%Room7_Scene20_Name%% Activated" tag="ROOM7_SCENE20_ACTIVATED" condition="$Room7_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 8 Light Events -->
+	<category name="%%Room8_Name%% Lights" condition="$Room8_Enable == 1">
+		<event name="%%Room8_Light1_Name%% Turned On" tag="ROOM8_LIGHT1_ON" condition="$Room8_Light1_Enable == 1" />
+		<event name="%%Room8_Light1_Name%% Turned Off" tag="ROOM8_LIGHT1_OFF" condition="$Room8_Light1_Enable == 1" />
+		<event name="%%Room8_Light1_Name%% Level Changed" tag="ROOM8_LIGHT1_LEVEL" condition="$Room8_Light1_Enable == 1 and $Room8_Light1_IsDimmer == 1" />
+		<event name="%%Room8_Light2_Name%% Turned On" tag="ROOM8_LIGHT2_ON" condition="$Room8_Light2_Enable == 1" />
+		<event name="%%Room8_Light2_Name%% Turned Off" tag="ROOM8_LIGHT2_OFF" condition="$Room8_Light2_Enable == 1" />
+		<event name="%%Room8_Light2_Name%% Level Changed" tag="ROOM8_LIGHT2_LEVEL" condition="$Room8_Light2_Enable == 1 and $Room8_Light2_IsDimmer == 1" />
+		<event name="%%Room8_Light3_Name%% Turned On" tag="ROOM8_LIGHT3_ON" condition="$Room8_Light3_Enable == 1" />
+		<event name="%%Room8_Light3_Name%% Turned Off" tag="ROOM8_LIGHT3_OFF" condition="$Room8_Light3_Enable == 1" />
+		<event name="%%Room8_Light3_Name%% Level Changed" tag="ROOM8_LIGHT3_LEVEL" condition="$Room8_Light3_Enable == 1 and $Room8_Light3_IsDimmer == 1" />
+		<event name="%%Room8_Light4_Name%% Turned On" tag="ROOM8_LIGHT4_ON" condition="$Room8_Light4_Enable == 1" />
+		<event name="%%Room8_Light4_Name%% Turned Off" tag="ROOM8_LIGHT4_OFF" condition="$Room8_Light4_Enable == 1" />
+		<event name="%%Room8_Light4_Name%% Level Changed" tag="ROOM8_LIGHT4_LEVEL" condition="$Room8_Light4_Enable == 1 and $Room8_Light4_IsDimmer == 1" />
+		<event name="%%Room8_Light5_Name%% Turned On" tag="ROOM8_LIGHT5_ON" condition="$Room8_Light5_Enable == 1" />
+		<event name="%%Room8_Light5_Name%% Turned Off" tag="ROOM8_LIGHT5_OFF" condition="$Room8_Light5_Enable == 1" />
+		<event name="%%Room8_Light5_Name%% Level Changed" tag="ROOM8_LIGHT5_LEVEL" condition="$Room8_Light5_Enable == 1 and $Room8_Light5_IsDimmer == 1" />
+		<event name="%%Room8_Light6_Name%% Turned On" tag="ROOM8_LIGHT6_ON" condition="$Room8_Light6_Enable == 1" />
+		<event name="%%Room8_Light6_Name%% Turned Off" tag="ROOM8_LIGHT6_OFF" condition="$Room8_Light6_Enable == 1" />
+		<event name="%%Room8_Light6_Name%% Level Changed" tag="ROOM8_LIGHT6_LEVEL" condition="$Room8_Light6_Enable == 1 and $Room8_Light6_IsDimmer == 1" />
+		<event name="%%Room8_Light7_Name%% Turned On" tag="ROOM8_LIGHT7_ON" condition="$Room8_Light7_Enable == 1" />
+		<event name="%%Room8_Light7_Name%% Turned Off" tag="ROOM8_LIGHT7_OFF" condition="$Room8_Light7_Enable == 1" />
+		<event name="%%Room8_Light7_Name%% Level Changed" tag="ROOM8_LIGHT7_LEVEL" condition="$Room8_Light7_Enable == 1 and $Room8_Light7_IsDimmer == 1" />
+		<event name="%%Room8_Light8_Name%% Turned On" tag="ROOM8_LIGHT8_ON" condition="$Room8_Light8_Enable == 1" />
+		<event name="%%Room8_Light8_Name%% Turned Off" tag="ROOM8_LIGHT8_OFF" condition="$Room8_Light8_Enable == 1" />
+		<event name="%%Room8_Light8_Name%% Level Changed" tag="ROOM8_LIGHT8_LEVEL" condition="$Room8_Light8_Enable == 1 and $Room8_Light8_IsDimmer == 1" />
+		<event name="%%Room8_Light9_Name%% Turned On" tag="ROOM8_LIGHT9_ON" condition="$Room8_Light9_Enable == 1" />
+		<event name="%%Room8_Light9_Name%% Turned Off" tag="ROOM8_LIGHT9_OFF" condition="$Room8_Light9_Enable == 1" />
+		<event name="%%Room8_Light9_Name%% Level Changed" tag="ROOM8_LIGHT9_LEVEL" condition="$Room8_Light9_Enable == 1 and $Room8_Light9_IsDimmer == 1" />
+		<event name="%%Room8_Light10_Name%% Turned On" tag="ROOM8_LIGHT10_ON" condition="$Room8_Light10_Enable == 1" />
+		<event name="%%Room8_Light10_Name%% Turned Off" tag="ROOM8_LIGHT10_OFF" condition="$Room8_Light10_Enable == 1" />
+		<event name="%%Room8_Light10_Name%% Level Changed" tag="ROOM8_LIGHT10_LEVEL" condition="$Room8_Light10_Enable == 1 and $Room8_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 8 Scene Events -->
+	<category name="%%Room8_Name%% Scenes" condition="$Room8_Enable == 1">
+		<event name="%%Room8_Scene1_Name%% Activated" tag="ROOM8_SCENE1_ACTIVATED" condition="$Room8_Scene1_Enable == 1" />
+		<event name="%%Room8_Scene2_Name%% Activated" tag="ROOM8_SCENE2_ACTIVATED" condition="$Room8_Scene2_Enable == 1" />
+		<event name="%%Room8_Scene3_Name%% Activated" tag="ROOM8_SCENE3_ACTIVATED" condition="$Room8_Scene3_Enable == 1" />
+		<event name="%%Room8_Scene4_Name%% Activated" tag="ROOM8_SCENE4_ACTIVATED" condition="$Room8_Scene4_Enable == 1" />
+		<event name="%%Room8_Scene5_Name%% Activated" tag="ROOM8_SCENE5_ACTIVATED" condition="$Room8_Scene5_Enable == 1" />
+		<event name="%%Room8_Scene6_Name%% Activated" tag="ROOM8_SCENE6_ACTIVATED" condition="$Room8_Scene6_Enable == 1" />
+		<event name="%%Room8_Scene7_Name%% Activated" tag="ROOM8_SCENE7_ACTIVATED" condition="$Room8_Scene7_Enable == 1" />
+		<event name="%%Room8_Scene8_Name%% Activated" tag="ROOM8_SCENE8_ACTIVATED" condition="$Room8_Scene8_Enable == 1" />
+		<event name="%%Room8_Scene9_Name%% Activated" tag="ROOM8_SCENE9_ACTIVATED" condition="$Room8_Scene9_Enable == 1" />
+		<event name="%%Room8_Scene10_Name%% Activated" tag="ROOM8_SCENE10_ACTIVATED" condition="$Room8_Scene10_Enable == 1" />
+		<event name="%%Room8_Scene11_Name%% Activated" tag="ROOM8_SCENE11_ACTIVATED" condition="$Room8_Scene11_Enable == 1" />
+		<event name="%%Room8_Scene12_Name%% Activated" tag="ROOM8_SCENE12_ACTIVATED" condition="$Room8_Scene12_Enable == 1" />
+		<event name="%%Room8_Scene13_Name%% Activated" tag="ROOM8_SCENE13_ACTIVATED" condition="$Room8_Scene13_Enable == 1" />
+		<event name="%%Room8_Scene14_Name%% Activated" tag="ROOM8_SCENE14_ACTIVATED" condition="$Room8_Scene14_Enable == 1" />
+		<event name="%%Room8_Scene15_Name%% Activated" tag="ROOM8_SCENE15_ACTIVATED" condition="$Room8_Scene15_Enable == 1" />
+		<event name="%%Room8_Scene16_Name%% Activated" tag="ROOM8_SCENE16_ACTIVATED" condition="$Room8_Scene16_Enable == 1" />
+		<event name="%%Room8_Scene17_Name%% Activated" tag="ROOM8_SCENE17_ACTIVATED" condition="$Room8_Scene17_Enable == 1" />
+		<event name="%%Room8_Scene18_Name%% Activated" tag="ROOM8_SCENE18_ACTIVATED" condition="$Room8_Scene18_Enable == 1" />
+		<event name="%%Room8_Scene19_Name%% Activated" tag="ROOM8_SCENE19_ACTIVATED" condition="$Room8_Scene19_Enable == 1" />
+		<event name="%%Room8_Scene20_Name%% Activated" tag="ROOM8_SCENE20_ACTIVATED" condition="$Room8_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 9 Light Events -->
+	<category name="%%Room9_Name%% Lights" condition="$Room9_Enable == 1">
+		<event name="%%Room9_Light1_Name%% Turned On" tag="ROOM9_LIGHT1_ON" condition="$Room9_Light1_Enable == 1" />
+		<event name="%%Room9_Light1_Name%% Turned Off" tag="ROOM9_LIGHT1_OFF" condition="$Room9_Light1_Enable == 1" />
+		<event name="%%Room9_Light1_Name%% Level Changed" tag="ROOM9_LIGHT1_LEVEL" condition="$Room9_Light1_Enable == 1 and $Room9_Light1_IsDimmer == 1" />
+		<event name="%%Room9_Light2_Name%% Turned On" tag="ROOM9_LIGHT2_ON" condition="$Room9_Light2_Enable == 1" />
+		<event name="%%Room9_Light2_Name%% Turned Off" tag="ROOM9_LIGHT2_OFF" condition="$Room9_Light2_Enable == 1" />
+		<event name="%%Room9_Light2_Name%% Level Changed" tag="ROOM9_LIGHT2_LEVEL" condition="$Room9_Light2_Enable == 1 and $Room9_Light2_IsDimmer == 1" />
+		<event name="%%Room9_Light3_Name%% Turned On" tag="ROOM9_LIGHT3_ON" condition="$Room9_Light3_Enable == 1" />
+		<event name="%%Room9_Light3_Name%% Turned Off" tag="ROOM9_LIGHT3_OFF" condition="$Room9_Light3_Enable == 1" />
+		<event name="%%Room9_Light3_Name%% Level Changed" tag="ROOM9_LIGHT3_LEVEL" condition="$Room9_Light3_Enable == 1 and $Room9_Light3_IsDimmer == 1" />
+		<event name="%%Room9_Light4_Name%% Turned On" tag="ROOM9_LIGHT4_ON" condition="$Room9_Light4_Enable == 1" />
+		<event name="%%Room9_Light4_Name%% Turned Off" tag="ROOM9_LIGHT4_OFF" condition="$Room9_Light4_Enable == 1" />
+		<event name="%%Room9_Light4_Name%% Level Changed" tag="ROOM9_LIGHT4_LEVEL" condition="$Room9_Light4_Enable == 1 and $Room9_Light4_IsDimmer == 1" />
+		<event name="%%Room9_Light5_Name%% Turned On" tag="ROOM9_LIGHT5_ON" condition="$Room9_Light5_Enable == 1" />
+		<event name="%%Room9_Light5_Name%% Turned Off" tag="ROOM9_LIGHT5_OFF" condition="$Room9_Light5_Enable == 1" />
+		<event name="%%Room9_Light5_Name%% Level Changed" tag="ROOM9_LIGHT5_LEVEL" condition="$Room9_Light5_Enable == 1 and $Room9_Light5_IsDimmer == 1" />
+		<event name="%%Room9_Light6_Name%% Turned On" tag="ROOM9_LIGHT6_ON" condition="$Room9_Light6_Enable == 1" />
+		<event name="%%Room9_Light6_Name%% Turned Off" tag="ROOM9_LIGHT6_OFF" condition="$Room9_Light6_Enable == 1" />
+		<event name="%%Room9_Light6_Name%% Level Changed" tag="ROOM9_LIGHT6_LEVEL" condition="$Room9_Light6_Enable == 1 and $Room9_Light6_IsDimmer == 1" />
+		<event name="%%Room9_Light7_Name%% Turned On" tag="ROOM9_LIGHT7_ON" condition="$Room9_Light7_Enable == 1" />
+		<event name="%%Room9_Light7_Name%% Turned Off" tag="ROOM9_LIGHT7_OFF" condition="$Room9_Light7_Enable == 1" />
+		<event name="%%Room9_Light7_Name%% Level Changed" tag="ROOM9_LIGHT7_LEVEL" condition="$Room9_Light7_Enable == 1 and $Room9_Light7_IsDimmer == 1" />
+		<event name="%%Room9_Light8_Name%% Turned On" tag="ROOM9_LIGHT8_ON" condition="$Room9_Light8_Enable == 1" />
+		<event name="%%Room9_Light8_Name%% Turned Off" tag="ROOM9_LIGHT8_OFF" condition="$Room9_Light8_Enable == 1" />
+		<event name="%%Room9_Light8_Name%% Level Changed" tag="ROOM9_LIGHT8_LEVEL" condition="$Room9_Light8_Enable == 1 and $Room9_Light8_IsDimmer == 1" />
+		<event name="%%Room9_Light9_Name%% Turned On" tag="ROOM9_LIGHT9_ON" condition="$Room9_Light9_Enable == 1" />
+		<event name="%%Room9_Light9_Name%% Turned Off" tag="ROOM9_LIGHT9_OFF" condition="$Room9_Light9_Enable == 1" />
+		<event name="%%Room9_Light9_Name%% Level Changed" tag="ROOM9_LIGHT9_LEVEL" condition="$Room9_Light9_Enable == 1 and $Room9_Light9_IsDimmer == 1" />
+		<event name="%%Room9_Light10_Name%% Turned On" tag="ROOM9_LIGHT10_ON" condition="$Room9_Light10_Enable == 1" />
+		<event name="%%Room9_Light10_Name%% Turned Off" tag="ROOM9_LIGHT10_OFF" condition="$Room9_Light10_Enable == 1" />
+		<event name="%%Room9_Light10_Name%% Level Changed" tag="ROOM9_LIGHT10_LEVEL" condition="$Room9_Light10_Enable == 1 and $Room9_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 9 Scene Events -->
+	<category name="%%Room9_Name%% Scenes" condition="$Room9_Enable == 1">
+		<event name="%%Room9_Scene1_Name%% Activated" tag="ROOM9_SCENE1_ACTIVATED" condition="$Room9_Scene1_Enable == 1" />
+		<event name="%%Room9_Scene2_Name%% Activated" tag="ROOM9_SCENE2_ACTIVATED" condition="$Room9_Scene2_Enable == 1" />
+		<event name="%%Room9_Scene3_Name%% Activated" tag="ROOM9_SCENE3_ACTIVATED" condition="$Room9_Scene3_Enable == 1" />
+		<event name="%%Room9_Scene4_Name%% Activated" tag="ROOM9_SCENE4_ACTIVATED" condition="$Room9_Scene4_Enable == 1" />
+		<event name="%%Room9_Scene5_Name%% Activated" tag="ROOM9_SCENE5_ACTIVATED" condition="$Room9_Scene5_Enable == 1" />
+		<event name="%%Room9_Scene6_Name%% Activated" tag="ROOM9_SCENE6_ACTIVATED" condition="$Room9_Scene6_Enable == 1" />
+		<event name="%%Room9_Scene7_Name%% Activated" tag="ROOM9_SCENE7_ACTIVATED" condition="$Room9_Scene7_Enable == 1" />
+		<event name="%%Room9_Scene8_Name%% Activated" tag="ROOM9_SCENE8_ACTIVATED" condition="$Room9_Scene8_Enable == 1" />
+		<event name="%%Room9_Scene9_Name%% Activated" tag="ROOM9_SCENE9_ACTIVATED" condition="$Room9_Scene9_Enable == 1" />
+		<event name="%%Room9_Scene10_Name%% Activated" tag="ROOM9_SCENE10_ACTIVATED" condition="$Room9_Scene10_Enable == 1" />
+		<event name="%%Room9_Scene11_Name%% Activated" tag="ROOM9_SCENE11_ACTIVATED" condition="$Room9_Scene11_Enable == 1" />
+		<event name="%%Room9_Scene12_Name%% Activated" tag="ROOM9_SCENE12_ACTIVATED" condition="$Room9_Scene12_Enable == 1" />
+		<event name="%%Room9_Scene13_Name%% Activated" tag="ROOM9_SCENE13_ACTIVATED" condition="$Room9_Scene13_Enable == 1" />
+		<event name="%%Room9_Scene14_Name%% Activated" tag="ROOM9_SCENE14_ACTIVATED" condition="$Room9_Scene14_Enable == 1" />
+		<event name="%%Room9_Scene15_Name%% Activated" tag="ROOM9_SCENE15_ACTIVATED" condition="$Room9_Scene15_Enable == 1" />
+		<event name="%%Room9_Scene16_Name%% Activated" tag="ROOM9_SCENE16_ACTIVATED" condition="$Room9_Scene16_Enable == 1" />
+		<event name="%%Room9_Scene17_Name%% Activated" tag="ROOM9_SCENE17_ACTIVATED" condition="$Room9_Scene17_Enable == 1" />
+		<event name="%%Room9_Scene18_Name%% Activated" tag="ROOM9_SCENE18_ACTIVATED" condition="$Room9_Scene18_Enable == 1" />
+		<event name="%%Room9_Scene19_Name%% Activated" tag="ROOM9_SCENE19_ACTIVATED" condition="$Room9_Scene19_Enable == 1" />
+		<event name="%%Room9_Scene20_Name%% Activated" tag="ROOM9_SCENE20_ACTIVATED" condition="$Room9_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 10 Light Events -->
+	<category name="%%Room10_Name%% Lights" condition="$Room10_Enable == 1">
+		<event name="%%Room10_Light1_Name%% Turned On" tag="ROOM10_LIGHT1_ON" condition="$Room10_Light1_Enable == 1" />
+		<event name="%%Room10_Light1_Name%% Turned Off" tag="ROOM10_LIGHT1_OFF" condition="$Room10_Light1_Enable == 1" />
+		<event name="%%Room10_Light1_Name%% Level Changed" tag="ROOM10_LIGHT1_LEVEL" condition="$Room10_Light1_Enable == 1 and $Room10_Light1_IsDimmer == 1" />
+		<event name="%%Room10_Light2_Name%% Turned On" tag="ROOM10_LIGHT2_ON" condition="$Room10_Light2_Enable == 1" />
+		<event name="%%Room10_Light2_Name%% Turned Off" tag="ROOM10_LIGHT2_OFF" condition="$Room10_Light2_Enable == 1" />
+		<event name="%%Room10_Light2_Name%% Level Changed" tag="ROOM10_LIGHT2_LEVEL" condition="$Room10_Light2_Enable == 1 and $Room10_Light2_IsDimmer == 1" />
+		<event name="%%Room10_Light3_Name%% Turned On" tag="ROOM10_LIGHT3_ON" condition="$Room10_Light3_Enable == 1" />
+		<event name="%%Room10_Light3_Name%% Turned Off" tag="ROOM10_LIGHT3_OFF" condition="$Room10_Light3_Enable == 1" />
+		<event name="%%Room10_Light3_Name%% Level Changed" tag="ROOM10_LIGHT3_LEVEL" condition="$Room10_Light3_Enable == 1 and $Room10_Light3_IsDimmer == 1" />
+		<event name="%%Room10_Light4_Name%% Turned On" tag="ROOM10_LIGHT4_ON" condition="$Room10_Light4_Enable == 1" />
+		<event name="%%Room10_Light4_Name%% Turned Off" tag="ROOM10_LIGHT4_OFF" condition="$Room10_Light4_Enable == 1" />
+		<event name="%%Room10_Light4_Name%% Level Changed" tag="ROOM10_LIGHT4_LEVEL" condition="$Room10_Light4_Enable == 1 and $Room10_Light4_IsDimmer == 1" />
+		<event name="%%Room10_Light5_Name%% Turned On" tag="ROOM10_LIGHT5_ON" condition="$Room10_Light5_Enable == 1" />
+		<event name="%%Room10_Light5_Name%% Turned Off" tag="ROOM10_LIGHT5_OFF" condition="$Room10_Light5_Enable == 1" />
+		<event name="%%Room10_Light5_Name%% Level Changed" tag="ROOM10_LIGHT5_LEVEL" condition="$Room10_Light5_Enable == 1 and $Room10_Light5_IsDimmer == 1" />
+		<event name="%%Room10_Light6_Name%% Turned On" tag="ROOM10_LIGHT6_ON" condition="$Room10_Light6_Enable == 1" />
+		<event name="%%Room10_Light6_Name%% Turned Off" tag="ROOM10_LIGHT6_OFF" condition="$Room10_Light6_Enable == 1" />
+		<event name="%%Room10_Light6_Name%% Level Changed" tag="ROOM10_LIGHT6_LEVEL" condition="$Room10_Light6_Enable == 1 and $Room10_Light6_IsDimmer == 1" />
+		<event name="%%Room10_Light7_Name%% Turned On" tag="ROOM10_LIGHT7_ON" condition="$Room10_Light7_Enable == 1" />
+		<event name="%%Room10_Light7_Name%% Turned Off" tag="ROOM10_LIGHT7_OFF" condition="$Room10_Light7_Enable == 1" />
+		<event name="%%Room10_Light7_Name%% Level Changed" tag="ROOM10_LIGHT7_LEVEL" condition="$Room10_Light7_Enable == 1 and $Room10_Light7_IsDimmer == 1" />
+		<event name="%%Room10_Light8_Name%% Turned On" tag="ROOM10_LIGHT8_ON" condition="$Room10_Light8_Enable == 1" />
+		<event name="%%Room10_Light8_Name%% Turned Off" tag="ROOM10_LIGHT8_OFF" condition="$Room10_Light8_Enable == 1" />
+		<event name="%%Room10_Light8_Name%% Level Changed" tag="ROOM10_LIGHT8_LEVEL" condition="$Room10_Light8_Enable == 1 and $Room10_Light8_IsDimmer == 1" />
+		<event name="%%Room10_Light9_Name%% Turned On" tag="ROOM10_LIGHT9_ON" condition="$Room10_Light9_Enable == 1" />
+		<event name="%%Room10_Light9_Name%% Turned Off" tag="ROOM10_LIGHT9_OFF" condition="$Room10_Light9_Enable == 1" />
+		<event name="%%Room10_Light9_Name%% Level Changed" tag="ROOM10_LIGHT9_LEVEL" condition="$Room10_Light9_Enable == 1 and $Room10_Light9_IsDimmer == 1" />
+		<event name="%%Room10_Light10_Name%% Turned On" tag="ROOM10_LIGHT10_ON" condition="$Room10_Light10_Enable == 1" />
+		<event name="%%Room10_Light10_Name%% Turned Off" tag="ROOM10_LIGHT10_OFF" condition="$Room10_Light10_Enable == 1" />
+		<event name="%%Room10_Light10_Name%% Level Changed" tag="ROOM10_LIGHT10_LEVEL" condition="$Room10_Light10_Enable == 1 and $Room10_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 10 Scene Events -->
+	<category name="%%Room10_Name%% Scenes" condition="$Room10_Enable == 1">
+		<event name="%%Room10_Scene1_Name%% Activated" tag="ROOM10_SCENE1_ACTIVATED" condition="$Room10_Scene1_Enable == 1" />
+		<event name="%%Room10_Scene2_Name%% Activated" tag="ROOM10_SCENE2_ACTIVATED" condition="$Room10_Scene2_Enable == 1" />
+		<event name="%%Room10_Scene3_Name%% Activated" tag="ROOM10_SCENE3_ACTIVATED" condition="$Room10_Scene3_Enable == 1" />
+		<event name="%%Room10_Scene4_Name%% Activated" tag="ROOM10_SCENE4_ACTIVATED" condition="$Room10_Scene4_Enable == 1" />
+		<event name="%%Room10_Scene5_Name%% Activated" tag="ROOM10_SCENE5_ACTIVATED" condition="$Room10_Scene5_Enable == 1" />
+		<event name="%%Room10_Scene6_Name%% Activated" tag="ROOM10_SCENE6_ACTIVATED" condition="$Room10_Scene6_Enable == 1" />
+		<event name="%%Room10_Scene7_Name%% Activated" tag="ROOM10_SCENE7_ACTIVATED" condition="$Room10_Scene7_Enable == 1" />
+		<event name="%%Room10_Scene8_Name%% Activated" tag="ROOM10_SCENE8_ACTIVATED" condition="$Room10_Scene8_Enable == 1" />
+		<event name="%%Room10_Scene9_Name%% Activated" tag="ROOM10_SCENE9_ACTIVATED" condition="$Room10_Scene9_Enable == 1" />
+		<event name="%%Room10_Scene10_Name%% Activated" tag="ROOM10_SCENE10_ACTIVATED" condition="$Room10_Scene10_Enable == 1" />
+		<event name="%%Room10_Scene11_Name%% Activated" tag="ROOM10_SCENE11_ACTIVATED" condition="$Room10_Scene11_Enable == 1" />
+		<event name="%%Room10_Scene12_Name%% Activated" tag="ROOM10_SCENE12_ACTIVATED" condition="$Room10_Scene12_Enable == 1" />
+		<event name="%%Room10_Scene13_Name%% Activated" tag="ROOM10_SCENE13_ACTIVATED" condition="$Room10_Scene13_Enable == 1" />
+		<event name="%%Room10_Scene14_Name%% Activated" tag="ROOM10_SCENE14_ACTIVATED" condition="$Room10_Scene14_Enable == 1" />
+		<event name="%%Room10_Scene15_Name%% Activated" tag="ROOM10_SCENE15_ACTIVATED" condition="$Room10_Scene15_Enable == 1" />
+		<event name="%%Room10_Scene16_Name%% Activated" tag="ROOM10_SCENE16_ACTIVATED" condition="$Room10_Scene16_Enable == 1" />
+		<event name="%%Room10_Scene17_Name%% Activated" tag="ROOM10_SCENE17_ACTIVATED" condition="$Room10_Scene17_Enable == 1" />
+		<event name="%%Room10_Scene18_Name%% Activated" tag="ROOM10_SCENE18_ACTIVATED" condition="$Room10_Scene18_Enable == 1" />
+		<event name="%%Room10_Scene19_Name%% Activated" tag="ROOM10_SCENE19_ACTIVATED" condition="$Room10_Scene19_Enable == 1" />
+		<event name="%%Room10_Scene20_Name%% Activated" tag="ROOM10_SCENE20_ACTIVATED" condition="$Room10_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 11 Light Events -->
+	<category name="%%Room11_Name%% Lights" condition="$Room11_Enable == 1">
+		<event name="%%Room11_Light1_Name%% Turned On" tag="ROOM11_LIGHT1_ON" condition="$Room11_Light1_Enable == 1" />
+		<event name="%%Room11_Light1_Name%% Turned Off" tag="ROOM11_LIGHT1_OFF" condition="$Room11_Light1_Enable == 1" />
+		<event name="%%Room11_Light1_Name%% Level Changed" tag="ROOM11_LIGHT1_LEVEL" condition="$Room11_Light1_Enable == 1 and $Room11_Light1_IsDimmer == 1" />
+		<event name="%%Room11_Light2_Name%% Turned On" tag="ROOM11_LIGHT2_ON" condition="$Room11_Light2_Enable == 1" />
+		<event name="%%Room11_Light2_Name%% Turned Off" tag="ROOM11_LIGHT2_OFF" condition="$Room11_Light2_Enable == 1" />
+		<event name="%%Room11_Light2_Name%% Level Changed" tag="ROOM11_LIGHT2_LEVEL" condition="$Room11_Light2_Enable == 1 and $Room11_Light2_IsDimmer == 1" />
+		<event name="%%Room11_Light3_Name%% Turned On" tag="ROOM11_LIGHT3_ON" condition="$Room11_Light3_Enable == 1" />
+		<event name="%%Room11_Light3_Name%% Turned Off" tag="ROOM11_LIGHT3_OFF" condition="$Room11_Light3_Enable == 1" />
+		<event name="%%Room11_Light3_Name%% Level Changed" tag="ROOM11_LIGHT3_LEVEL" condition="$Room11_Light3_Enable == 1 and $Room11_Light3_IsDimmer == 1" />
+		<event name="%%Room11_Light4_Name%% Turned On" tag="ROOM11_LIGHT4_ON" condition="$Room11_Light4_Enable == 1" />
+		<event name="%%Room11_Light4_Name%% Turned Off" tag="ROOM11_LIGHT4_OFF" condition="$Room11_Light4_Enable == 1" />
+		<event name="%%Room11_Light4_Name%% Level Changed" tag="ROOM11_LIGHT4_LEVEL" condition="$Room11_Light4_Enable == 1 and $Room11_Light4_IsDimmer == 1" />
+		<event name="%%Room11_Light5_Name%% Turned On" tag="ROOM11_LIGHT5_ON" condition="$Room11_Light5_Enable == 1" />
+		<event name="%%Room11_Light5_Name%% Turned Off" tag="ROOM11_LIGHT5_OFF" condition="$Room11_Light5_Enable == 1" />
+		<event name="%%Room11_Light5_Name%% Level Changed" tag="ROOM11_LIGHT5_LEVEL" condition="$Room11_Light5_Enable == 1 and $Room11_Light5_IsDimmer == 1" />
+		<event name="%%Room11_Light6_Name%% Turned On" tag="ROOM11_LIGHT6_ON" condition="$Room11_Light6_Enable == 1" />
+		<event name="%%Room11_Light6_Name%% Turned Off" tag="ROOM11_LIGHT6_OFF" condition="$Room11_Light6_Enable == 1" />
+		<event name="%%Room11_Light6_Name%% Level Changed" tag="ROOM11_LIGHT6_LEVEL" condition="$Room11_Light6_Enable == 1 and $Room11_Light6_IsDimmer == 1" />
+		<event name="%%Room11_Light7_Name%% Turned On" tag="ROOM11_LIGHT7_ON" condition="$Room11_Light7_Enable == 1" />
+		<event name="%%Room11_Light7_Name%% Turned Off" tag="ROOM11_LIGHT7_OFF" condition="$Room11_Light7_Enable == 1" />
+		<event name="%%Room11_Light7_Name%% Level Changed" tag="ROOM11_LIGHT7_LEVEL" condition="$Room11_Light7_Enable == 1 and $Room11_Light7_IsDimmer == 1" />
+		<event name="%%Room11_Light8_Name%% Turned On" tag="ROOM11_LIGHT8_ON" condition="$Room11_Light8_Enable == 1" />
+		<event name="%%Room11_Light8_Name%% Turned Off" tag="ROOM11_LIGHT8_OFF" condition="$Room11_Light8_Enable == 1" />
+		<event name="%%Room11_Light8_Name%% Level Changed" tag="ROOM11_LIGHT8_LEVEL" condition="$Room11_Light8_Enable == 1 and $Room11_Light8_IsDimmer == 1" />
+		<event name="%%Room11_Light9_Name%% Turned On" tag="ROOM11_LIGHT9_ON" condition="$Room11_Light9_Enable == 1" />
+		<event name="%%Room11_Light9_Name%% Turned Off" tag="ROOM11_LIGHT9_OFF" condition="$Room11_Light9_Enable == 1" />
+		<event name="%%Room11_Light9_Name%% Level Changed" tag="ROOM11_LIGHT9_LEVEL" condition="$Room11_Light9_Enable == 1 and $Room11_Light9_IsDimmer == 1" />
+		<event name="%%Room11_Light10_Name%% Turned On" tag="ROOM11_LIGHT10_ON" condition="$Room11_Light10_Enable == 1" />
+		<event name="%%Room11_Light10_Name%% Turned Off" tag="ROOM11_LIGHT10_OFF" condition="$Room11_Light10_Enable == 1" />
+		<event name="%%Room11_Light10_Name%% Level Changed" tag="ROOM11_LIGHT10_LEVEL" condition="$Room11_Light10_Enable == 1 and $Room11_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 11 Scene Events -->
+	<category name="%%Room11_Name%% Scenes" condition="$Room11_Enable == 1">
+		<event name="%%Room11_Scene1_Name%% Activated" tag="ROOM11_SCENE1_ACTIVATED" condition="$Room11_Scene1_Enable == 1" />
+		<event name="%%Room11_Scene2_Name%% Activated" tag="ROOM11_SCENE2_ACTIVATED" condition="$Room11_Scene2_Enable == 1" />
+		<event name="%%Room11_Scene3_Name%% Activated" tag="ROOM11_SCENE3_ACTIVATED" condition="$Room11_Scene3_Enable == 1" />
+		<event name="%%Room11_Scene4_Name%% Activated" tag="ROOM11_SCENE4_ACTIVATED" condition="$Room11_Scene4_Enable == 1" />
+		<event name="%%Room11_Scene5_Name%% Activated" tag="ROOM11_SCENE5_ACTIVATED" condition="$Room11_Scene5_Enable == 1" />
+		<event name="%%Room11_Scene6_Name%% Activated" tag="ROOM11_SCENE6_ACTIVATED" condition="$Room11_Scene6_Enable == 1" />
+		<event name="%%Room11_Scene7_Name%% Activated" tag="ROOM11_SCENE7_ACTIVATED" condition="$Room11_Scene7_Enable == 1" />
+		<event name="%%Room11_Scene8_Name%% Activated" tag="ROOM11_SCENE8_ACTIVATED" condition="$Room11_Scene8_Enable == 1" />
+		<event name="%%Room11_Scene9_Name%% Activated" tag="ROOM11_SCENE9_ACTIVATED" condition="$Room11_Scene9_Enable == 1" />
+		<event name="%%Room11_Scene10_Name%% Activated" tag="ROOM11_SCENE10_ACTIVATED" condition="$Room11_Scene10_Enable == 1" />
+		<event name="%%Room11_Scene11_Name%% Activated" tag="ROOM11_SCENE11_ACTIVATED" condition="$Room11_Scene11_Enable == 1" />
+		<event name="%%Room11_Scene12_Name%% Activated" tag="ROOM11_SCENE12_ACTIVATED" condition="$Room11_Scene12_Enable == 1" />
+		<event name="%%Room11_Scene13_Name%% Activated" tag="ROOM11_SCENE13_ACTIVATED" condition="$Room11_Scene13_Enable == 1" />
+		<event name="%%Room11_Scene14_Name%% Activated" tag="ROOM11_SCENE14_ACTIVATED" condition="$Room11_Scene14_Enable == 1" />
+		<event name="%%Room11_Scene15_Name%% Activated" tag="ROOM11_SCENE15_ACTIVATED" condition="$Room11_Scene15_Enable == 1" />
+		<event name="%%Room11_Scene16_Name%% Activated" tag="ROOM11_SCENE16_ACTIVATED" condition="$Room11_Scene16_Enable == 1" />
+		<event name="%%Room11_Scene17_Name%% Activated" tag="ROOM11_SCENE17_ACTIVATED" condition="$Room11_Scene17_Enable == 1" />
+		<event name="%%Room11_Scene18_Name%% Activated" tag="ROOM11_SCENE18_ACTIVATED" condition="$Room11_Scene18_Enable == 1" />
+		<event name="%%Room11_Scene19_Name%% Activated" tag="ROOM11_SCENE19_ACTIVATED" condition="$Room11_Scene19_Enable == 1" />
+		<event name="%%Room11_Scene20_Name%% Activated" tag="ROOM11_SCENE20_ACTIVATED" condition="$Room11_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 12 Light Events -->
+	<category name="%%Room12_Name%% Lights" condition="$Room12_Enable == 1">
+		<event name="%%Room12_Light1_Name%% Turned On" tag="ROOM12_LIGHT1_ON" condition="$Room12_Light1_Enable == 1" />
+		<event name="%%Room12_Light1_Name%% Turned Off" tag="ROOM12_LIGHT1_OFF" condition="$Room12_Light1_Enable == 1" />
+		<event name="%%Room12_Light1_Name%% Level Changed" tag="ROOM12_LIGHT1_LEVEL" condition="$Room12_Light1_Enable == 1 and $Room12_Light1_IsDimmer == 1" />
+		<event name="%%Room12_Light2_Name%% Turned On" tag="ROOM12_LIGHT2_ON" condition="$Room12_Light2_Enable == 1" />
+		<event name="%%Room12_Light2_Name%% Turned Off" tag="ROOM12_LIGHT2_OFF" condition="$Room12_Light2_Enable == 1" />
+		<event name="%%Room12_Light2_Name%% Level Changed" tag="ROOM12_LIGHT2_LEVEL" condition="$Room12_Light2_Enable == 1 and $Room12_Light2_IsDimmer == 1" />
+		<event name="%%Room12_Light3_Name%% Turned On" tag="ROOM12_LIGHT3_ON" condition="$Room12_Light3_Enable == 1" />
+		<event name="%%Room12_Light3_Name%% Turned Off" tag="ROOM12_LIGHT3_OFF" condition="$Room12_Light3_Enable == 1" />
+		<event name="%%Room12_Light3_Name%% Level Changed" tag="ROOM12_LIGHT3_LEVEL" condition="$Room12_Light3_Enable == 1 and $Room12_Light3_IsDimmer == 1" />
+		<event name="%%Room12_Light4_Name%% Turned On" tag="ROOM12_LIGHT4_ON" condition="$Room12_Light4_Enable == 1" />
+		<event name="%%Room12_Light4_Name%% Turned Off" tag="ROOM12_LIGHT4_OFF" condition="$Room12_Light4_Enable == 1" />
+		<event name="%%Room12_Light4_Name%% Level Changed" tag="ROOM12_LIGHT4_LEVEL" condition="$Room12_Light4_Enable == 1 and $Room12_Light4_IsDimmer == 1" />
+		<event name="%%Room12_Light5_Name%% Turned On" tag="ROOM12_LIGHT5_ON" condition="$Room12_Light5_Enable == 1" />
+		<event name="%%Room12_Light5_Name%% Turned Off" tag="ROOM12_LIGHT5_OFF" condition="$Room12_Light5_Enable == 1" />
+		<event name="%%Room12_Light5_Name%% Level Changed" tag="ROOM12_LIGHT5_LEVEL" condition="$Room12_Light5_Enable == 1 and $Room12_Light5_IsDimmer == 1" />
+		<event name="%%Room12_Light6_Name%% Turned On" tag="ROOM12_LIGHT6_ON" condition="$Room12_Light6_Enable == 1" />
+		<event name="%%Room12_Light6_Name%% Turned Off" tag="ROOM12_LIGHT6_OFF" condition="$Room12_Light6_Enable == 1" />
+		<event name="%%Room12_Light6_Name%% Level Changed" tag="ROOM12_LIGHT6_LEVEL" condition="$Room12_Light6_Enable == 1 and $Room12_Light6_IsDimmer == 1" />
+		<event name="%%Room12_Light7_Name%% Turned On" tag="ROOM12_LIGHT7_ON" condition="$Room12_Light7_Enable == 1" />
+		<event name="%%Room12_Light7_Name%% Turned Off" tag="ROOM12_LIGHT7_OFF" condition="$Room12_Light7_Enable == 1" />
+		<event name="%%Room12_Light7_Name%% Level Changed" tag="ROOM12_LIGHT7_LEVEL" condition="$Room12_Light7_Enable == 1 and $Room12_Light7_IsDimmer == 1" />
+		<event name="%%Room12_Light8_Name%% Turned On" tag="ROOM12_LIGHT8_ON" condition="$Room12_Light8_Enable == 1" />
+		<event name="%%Room12_Light8_Name%% Turned Off" tag="ROOM12_LIGHT8_OFF" condition="$Room12_Light8_Enable == 1" />
+		<event name="%%Room12_Light8_Name%% Level Changed" tag="ROOM12_LIGHT8_LEVEL" condition="$Room12_Light8_Enable == 1 and $Room12_Light8_IsDimmer == 1" />
+		<event name="%%Room12_Light9_Name%% Turned On" tag="ROOM12_LIGHT9_ON" condition="$Room12_Light9_Enable == 1" />
+		<event name="%%Room12_Light9_Name%% Turned Off" tag="ROOM12_LIGHT9_OFF" condition="$Room12_Light9_Enable == 1" />
+		<event name="%%Room12_Light9_Name%% Level Changed" tag="ROOM12_LIGHT9_LEVEL" condition="$Room12_Light9_Enable == 1 and $Room12_Light9_IsDimmer == 1" />
+		<event name="%%Room12_Light10_Name%% Turned On" tag="ROOM12_LIGHT10_ON" condition="$Room12_Light10_Enable == 1" />
+		<event name="%%Room12_Light10_Name%% Turned Off" tag="ROOM12_LIGHT10_OFF" condition="$Room12_Light10_Enable == 1" />
+		<event name="%%Room12_Light10_Name%% Level Changed" tag="ROOM12_LIGHT10_LEVEL" condition="$Room12_Light10_Enable == 1 and $Room12_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 12 Scene Events -->
+	<category name="%%Room12_Name%% Scenes" condition="$Room12_Enable == 1">
+		<event name="%%Room12_Scene1_Name%% Activated" tag="ROOM12_SCENE1_ACTIVATED" condition="$Room12_Scene1_Enable == 1" />
+		<event name="%%Room12_Scene2_Name%% Activated" tag="ROOM12_SCENE2_ACTIVATED" condition="$Room12_Scene2_Enable == 1" />
+		<event name="%%Room12_Scene3_Name%% Activated" tag="ROOM12_SCENE3_ACTIVATED" condition="$Room12_Scene3_Enable == 1" />
+		<event name="%%Room12_Scene4_Name%% Activated" tag="ROOM12_SCENE4_ACTIVATED" condition="$Room12_Scene4_Enable == 1" />
+		<event name="%%Room12_Scene5_Name%% Activated" tag="ROOM12_SCENE5_ACTIVATED" condition="$Room12_Scene5_Enable == 1" />
+		<event name="%%Room12_Scene6_Name%% Activated" tag="ROOM12_SCENE6_ACTIVATED" condition="$Room12_Scene6_Enable == 1" />
+		<event name="%%Room12_Scene7_Name%% Activated" tag="ROOM12_SCENE7_ACTIVATED" condition="$Room12_Scene7_Enable == 1" />
+		<event name="%%Room12_Scene8_Name%% Activated" tag="ROOM12_SCENE8_ACTIVATED" condition="$Room12_Scene8_Enable == 1" />
+		<event name="%%Room12_Scene9_Name%% Activated" tag="ROOM12_SCENE9_ACTIVATED" condition="$Room12_Scene9_Enable == 1" />
+		<event name="%%Room12_Scene10_Name%% Activated" tag="ROOM12_SCENE10_ACTIVATED" condition="$Room12_Scene10_Enable == 1" />
+		<event name="%%Room12_Scene11_Name%% Activated" tag="ROOM12_SCENE11_ACTIVATED" condition="$Room12_Scene11_Enable == 1" />
+		<event name="%%Room12_Scene12_Name%% Activated" tag="ROOM12_SCENE12_ACTIVATED" condition="$Room12_Scene12_Enable == 1" />
+		<event name="%%Room12_Scene13_Name%% Activated" tag="ROOM12_SCENE13_ACTIVATED" condition="$Room12_Scene13_Enable == 1" />
+		<event name="%%Room12_Scene14_Name%% Activated" tag="ROOM12_SCENE14_ACTIVATED" condition="$Room12_Scene14_Enable == 1" />
+		<event name="%%Room12_Scene15_Name%% Activated" tag="ROOM12_SCENE15_ACTIVATED" condition="$Room12_Scene15_Enable == 1" />
+		<event name="%%Room12_Scene16_Name%% Activated" tag="ROOM12_SCENE16_ACTIVATED" condition="$Room12_Scene16_Enable == 1" />
+		<event name="%%Room12_Scene17_Name%% Activated" tag="ROOM12_SCENE17_ACTIVATED" condition="$Room12_Scene17_Enable == 1" />
+		<event name="%%Room12_Scene18_Name%% Activated" tag="ROOM12_SCENE18_ACTIVATED" condition="$Room12_Scene18_Enable == 1" />
+		<event name="%%Room12_Scene19_Name%% Activated" tag="ROOM12_SCENE19_ACTIVATED" condition="$Room12_Scene19_Enable == 1" />
+		<event name="%%Room12_Scene20_Name%% Activated" tag="ROOM12_SCENE20_ACTIVATED" condition="$Room12_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 13 Light Events -->
+	<category name="%%Room13_Name%% Lights" condition="$Room13_Enable == 1">
+		<event name="%%Room13_Light1_Name%% Turned On" tag="ROOM13_LIGHT1_ON" condition="$Room13_Light1_Enable == 1" />
+		<event name="%%Room13_Light1_Name%% Turned Off" tag="ROOM13_LIGHT1_OFF" condition="$Room13_Light1_Enable == 1" />
+		<event name="%%Room13_Light1_Name%% Level Changed" tag="ROOM13_LIGHT1_LEVEL" condition="$Room13_Light1_Enable == 1 and $Room13_Light1_IsDimmer == 1" />
+		<event name="%%Room13_Light2_Name%% Turned On" tag="ROOM13_LIGHT2_ON" condition="$Room13_Light2_Enable == 1" />
+		<event name="%%Room13_Light2_Name%% Turned Off" tag="ROOM13_LIGHT2_OFF" condition="$Room13_Light2_Enable == 1" />
+		<event name="%%Room13_Light2_Name%% Level Changed" tag="ROOM13_LIGHT2_LEVEL" condition="$Room13_Light2_Enable == 1 and $Room13_Light2_IsDimmer == 1" />
+		<event name="%%Room13_Light3_Name%% Turned On" tag="ROOM13_LIGHT3_ON" condition="$Room13_Light3_Enable == 1" />
+		<event name="%%Room13_Light3_Name%% Turned Off" tag="ROOM13_LIGHT3_OFF" condition="$Room13_Light3_Enable == 1" />
+		<event name="%%Room13_Light3_Name%% Level Changed" tag="ROOM13_LIGHT3_LEVEL" condition="$Room13_Light3_Enable == 1 and $Room13_Light3_IsDimmer == 1" />
+		<event name="%%Room13_Light4_Name%% Turned On" tag="ROOM13_LIGHT4_ON" condition="$Room13_Light4_Enable == 1" />
+		<event name="%%Room13_Light4_Name%% Turned Off" tag="ROOM13_LIGHT4_OFF" condition="$Room13_Light4_Enable == 1" />
+		<event name="%%Room13_Light4_Name%% Level Changed" tag="ROOM13_LIGHT4_LEVEL" condition="$Room13_Light4_Enable == 1 and $Room13_Light4_IsDimmer == 1" />
+		<event name="%%Room13_Light5_Name%% Turned On" tag="ROOM13_LIGHT5_ON" condition="$Room13_Light5_Enable == 1" />
+		<event name="%%Room13_Light5_Name%% Turned Off" tag="ROOM13_LIGHT5_OFF" condition="$Room13_Light5_Enable == 1" />
+		<event name="%%Room13_Light5_Name%% Level Changed" tag="ROOM13_LIGHT5_LEVEL" condition="$Room13_Light5_Enable == 1 and $Room13_Light5_IsDimmer == 1" />
+		<event name="%%Room13_Light6_Name%% Turned On" tag="ROOM13_LIGHT6_ON" condition="$Room13_Light6_Enable == 1" />
+		<event name="%%Room13_Light6_Name%% Turned Off" tag="ROOM13_LIGHT6_OFF" condition="$Room13_Light6_Enable == 1" />
+		<event name="%%Room13_Light6_Name%% Level Changed" tag="ROOM13_LIGHT6_LEVEL" condition="$Room13_Light6_Enable == 1 and $Room13_Light6_IsDimmer == 1" />
+		<event name="%%Room13_Light7_Name%% Turned On" tag="ROOM13_LIGHT7_ON" condition="$Room13_Light7_Enable == 1" />
+		<event name="%%Room13_Light7_Name%% Turned Off" tag="ROOM13_LIGHT7_OFF" condition="$Room13_Light7_Enable == 1" />
+		<event name="%%Room13_Light7_Name%% Level Changed" tag="ROOM13_LIGHT7_LEVEL" condition="$Room13_Light7_Enable == 1 and $Room13_Light7_IsDimmer == 1" />
+		<event name="%%Room13_Light8_Name%% Turned On" tag="ROOM13_LIGHT8_ON" condition="$Room13_Light8_Enable == 1" />
+		<event name="%%Room13_Light8_Name%% Turned Off" tag="ROOM13_LIGHT8_OFF" condition="$Room13_Light8_Enable == 1" />
+		<event name="%%Room13_Light8_Name%% Level Changed" tag="ROOM13_LIGHT8_LEVEL" condition="$Room13_Light8_Enable == 1 and $Room13_Light8_IsDimmer == 1" />
+		<event name="%%Room13_Light9_Name%% Turned On" tag="ROOM13_LIGHT9_ON" condition="$Room13_Light9_Enable == 1" />
+		<event name="%%Room13_Light9_Name%% Turned Off" tag="ROOM13_LIGHT9_OFF" condition="$Room13_Light9_Enable == 1" />
+		<event name="%%Room13_Light9_Name%% Level Changed" tag="ROOM13_LIGHT9_LEVEL" condition="$Room13_Light9_Enable == 1 and $Room13_Light9_IsDimmer == 1" />
+		<event name="%%Room13_Light10_Name%% Turned On" tag="ROOM13_LIGHT10_ON" condition="$Room13_Light10_Enable == 1" />
+		<event name="%%Room13_Light10_Name%% Turned Off" tag="ROOM13_LIGHT10_OFF" condition="$Room13_Light10_Enable == 1" />
+		<event name="%%Room13_Light10_Name%% Level Changed" tag="ROOM13_LIGHT10_LEVEL" condition="$Room13_Light10_Enable == 1 and $Room13_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 13 Scene Events -->
+	<category name="%%Room13_Name%% Scenes" condition="$Room13_Enable == 1">
+		<event name="%%Room13_Scene1_Name%% Activated" tag="ROOM13_SCENE1_ACTIVATED" condition="$Room13_Scene1_Enable == 1" />
+		<event name="%%Room13_Scene2_Name%% Activated" tag="ROOM13_SCENE2_ACTIVATED" condition="$Room13_Scene2_Enable == 1" />
+		<event name="%%Room13_Scene3_Name%% Activated" tag="ROOM13_SCENE3_ACTIVATED" condition="$Room13_Scene3_Enable == 1" />
+		<event name="%%Room13_Scene4_Name%% Activated" tag="ROOM13_SCENE4_ACTIVATED" condition="$Room13_Scene4_Enable == 1" />
+		<event name="%%Room13_Scene5_Name%% Activated" tag="ROOM13_SCENE5_ACTIVATED" condition="$Room13_Scene5_Enable == 1" />
+		<event name="%%Room13_Scene6_Name%% Activated" tag="ROOM13_SCENE6_ACTIVATED" condition="$Room13_Scene6_Enable == 1" />
+		<event name="%%Room13_Scene7_Name%% Activated" tag="ROOM13_SCENE7_ACTIVATED" condition="$Room13_Scene7_Enable == 1" />
+		<event name="%%Room13_Scene8_Name%% Activated" tag="ROOM13_SCENE8_ACTIVATED" condition="$Room13_Scene8_Enable == 1" />
+		<event name="%%Room13_Scene9_Name%% Activated" tag="ROOM13_SCENE9_ACTIVATED" condition="$Room13_Scene9_Enable == 1" />
+		<event name="%%Room13_Scene10_Name%% Activated" tag="ROOM13_SCENE10_ACTIVATED" condition="$Room13_Scene10_Enable == 1" />
+		<event name="%%Room13_Scene11_Name%% Activated" tag="ROOM13_SCENE11_ACTIVATED" condition="$Room13_Scene11_Enable == 1" />
+		<event name="%%Room13_Scene12_Name%% Activated" tag="ROOM13_SCENE12_ACTIVATED" condition="$Room13_Scene12_Enable == 1" />
+		<event name="%%Room13_Scene13_Name%% Activated" tag="ROOM13_SCENE13_ACTIVATED" condition="$Room13_Scene13_Enable == 1" />
+		<event name="%%Room13_Scene14_Name%% Activated" tag="ROOM13_SCENE14_ACTIVATED" condition="$Room13_Scene14_Enable == 1" />
+		<event name="%%Room13_Scene15_Name%% Activated" tag="ROOM13_SCENE15_ACTIVATED" condition="$Room13_Scene15_Enable == 1" />
+		<event name="%%Room13_Scene16_Name%% Activated" tag="ROOM13_SCENE16_ACTIVATED" condition="$Room13_Scene16_Enable == 1" />
+		<event name="%%Room13_Scene17_Name%% Activated" tag="ROOM13_SCENE17_ACTIVATED" condition="$Room13_Scene17_Enable == 1" />
+		<event name="%%Room13_Scene18_Name%% Activated" tag="ROOM13_SCENE18_ACTIVATED" condition="$Room13_Scene18_Enable == 1" />
+		<event name="%%Room13_Scene19_Name%% Activated" tag="ROOM13_SCENE19_ACTIVATED" condition="$Room13_Scene19_Enable == 1" />
+		<event name="%%Room13_Scene20_Name%% Activated" tag="ROOM13_SCENE20_ACTIVATED" condition="$Room13_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 14 Light Events -->
+	<category name="%%Room14_Name%% Lights" condition="$Room14_Enable == 1">
+		<event name="%%Room14_Light1_Name%% Turned On" tag="ROOM14_LIGHT1_ON" condition="$Room14_Light1_Enable == 1" />
+		<event name="%%Room14_Light1_Name%% Turned Off" tag="ROOM14_LIGHT1_OFF" condition="$Room14_Light1_Enable == 1" />
+		<event name="%%Room14_Light1_Name%% Level Changed" tag="ROOM14_LIGHT1_LEVEL" condition="$Room14_Light1_Enable == 1 and $Room14_Light1_IsDimmer == 1" />
+		<event name="%%Room14_Light2_Name%% Turned On" tag="ROOM14_LIGHT2_ON" condition="$Room14_Light2_Enable == 1" />
+		<event name="%%Room14_Light2_Name%% Turned Off" tag="ROOM14_LIGHT2_OFF" condition="$Room14_Light2_Enable == 1" />
+		<event name="%%Room14_Light2_Name%% Level Changed" tag="ROOM14_LIGHT2_LEVEL" condition="$Room14_Light2_Enable == 1 and $Room14_Light2_IsDimmer == 1" />
+		<event name="%%Room14_Light3_Name%% Turned On" tag="ROOM14_LIGHT3_ON" condition="$Room14_Light3_Enable == 1" />
+		<event name="%%Room14_Light3_Name%% Turned Off" tag="ROOM14_LIGHT3_OFF" condition="$Room14_Light3_Enable == 1" />
+		<event name="%%Room14_Light3_Name%% Level Changed" tag="ROOM14_LIGHT3_LEVEL" condition="$Room14_Light3_Enable == 1 and $Room14_Light3_IsDimmer == 1" />
+		<event name="%%Room14_Light4_Name%% Turned On" tag="ROOM14_LIGHT4_ON" condition="$Room14_Light4_Enable == 1" />
+		<event name="%%Room14_Light4_Name%% Turned Off" tag="ROOM14_LIGHT4_OFF" condition="$Room14_Light4_Enable == 1" />
+		<event name="%%Room14_Light4_Name%% Level Changed" tag="ROOM14_LIGHT4_LEVEL" condition="$Room14_Light4_Enable == 1 and $Room14_Light4_IsDimmer == 1" />
+		<event name="%%Room14_Light5_Name%% Turned On" tag="ROOM14_LIGHT5_ON" condition="$Room14_Light5_Enable == 1" />
+		<event name="%%Room14_Light5_Name%% Turned Off" tag="ROOM14_LIGHT5_OFF" condition="$Room14_Light5_Enable == 1" />
+		<event name="%%Room14_Light5_Name%% Level Changed" tag="ROOM14_LIGHT5_LEVEL" condition="$Room14_Light5_Enable == 1 and $Room14_Light5_IsDimmer == 1" />
+		<event name="%%Room14_Light6_Name%% Turned On" tag="ROOM14_LIGHT6_ON" condition="$Room14_Light6_Enable == 1" />
+		<event name="%%Room14_Light6_Name%% Turned Off" tag="ROOM14_LIGHT6_OFF" condition="$Room14_Light6_Enable == 1" />
+		<event name="%%Room14_Light6_Name%% Level Changed" tag="ROOM14_LIGHT6_LEVEL" condition="$Room14_Light6_Enable == 1 and $Room14_Light6_IsDimmer == 1" />
+		<event name="%%Room14_Light7_Name%% Turned On" tag="ROOM14_LIGHT7_ON" condition="$Room14_Light7_Enable == 1" />
+		<event name="%%Room14_Light7_Name%% Turned Off" tag="ROOM14_LIGHT7_OFF" condition="$Room14_Light7_Enable == 1" />
+		<event name="%%Room14_Light7_Name%% Level Changed" tag="ROOM14_LIGHT7_LEVEL" condition="$Room14_Light7_Enable == 1 and $Room14_Light7_IsDimmer == 1" />
+		<event name="%%Room14_Light8_Name%% Turned On" tag="ROOM14_LIGHT8_ON" condition="$Room14_Light8_Enable == 1" />
+		<event name="%%Room14_Light8_Name%% Turned Off" tag="ROOM14_LIGHT8_OFF" condition="$Room14_Light8_Enable == 1" />
+		<event name="%%Room14_Light8_Name%% Level Changed" tag="ROOM14_LIGHT8_LEVEL" condition="$Room14_Light8_Enable == 1 and $Room14_Light8_IsDimmer == 1" />
+		<event name="%%Room14_Light9_Name%% Turned On" tag="ROOM14_LIGHT9_ON" condition="$Room14_Light9_Enable == 1" />
+		<event name="%%Room14_Light9_Name%% Turned Off" tag="ROOM14_LIGHT9_OFF" condition="$Room14_Light9_Enable == 1" />
+		<event name="%%Room14_Light9_Name%% Level Changed" tag="ROOM14_LIGHT9_LEVEL" condition="$Room14_Light9_Enable == 1 and $Room14_Light9_IsDimmer == 1" />
+		<event name="%%Room14_Light10_Name%% Turned On" tag="ROOM14_LIGHT10_ON" condition="$Room14_Light10_Enable == 1" />
+		<event name="%%Room14_Light10_Name%% Turned Off" tag="ROOM14_LIGHT10_OFF" condition="$Room14_Light10_Enable == 1" />
+		<event name="%%Room14_Light10_Name%% Level Changed" tag="ROOM14_LIGHT10_LEVEL" condition="$Room14_Light10_Enable == 1 and $Room14_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 14 Scene Events -->
+	<category name="%%Room14_Name%% Scenes" condition="$Room14_Enable == 1">
+		<event name="%%Room14_Scene1_Name%% Activated" tag="ROOM14_SCENE1_ACTIVATED" condition="$Room14_Scene1_Enable == 1" />
+		<event name="%%Room14_Scene2_Name%% Activated" tag="ROOM14_SCENE2_ACTIVATED" condition="$Room14_Scene2_Enable == 1" />
+		<event name="%%Room14_Scene3_Name%% Activated" tag="ROOM14_SCENE3_ACTIVATED" condition="$Room14_Scene3_Enable == 1" />
+		<event name="%%Room14_Scene4_Name%% Activated" tag="ROOM14_SCENE4_ACTIVATED" condition="$Room14_Scene4_Enable == 1" />
+		<event name="%%Room14_Scene5_Name%% Activated" tag="ROOM14_SCENE5_ACTIVATED" condition="$Room14_Scene5_Enable == 1" />
+		<event name="%%Room14_Scene6_Name%% Activated" tag="ROOM14_SCENE6_ACTIVATED" condition="$Room14_Scene6_Enable == 1" />
+		<event name="%%Room14_Scene7_Name%% Activated" tag="ROOM14_SCENE7_ACTIVATED" condition="$Room14_Scene7_Enable == 1" />
+		<event name="%%Room14_Scene8_Name%% Activated" tag="ROOM14_SCENE8_ACTIVATED" condition="$Room14_Scene8_Enable == 1" />
+		<event name="%%Room14_Scene9_Name%% Activated" tag="ROOM14_SCENE9_ACTIVATED" condition="$Room14_Scene9_Enable == 1" />
+		<event name="%%Room14_Scene10_Name%% Activated" tag="ROOM14_SCENE10_ACTIVATED" condition="$Room14_Scene10_Enable == 1" />
+		<event name="%%Room14_Scene11_Name%% Activated" tag="ROOM14_SCENE11_ACTIVATED" condition="$Room14_Scene11_Enable == 1" />
+		<event name="%%Room14_Scene12_Name%% Activated" tag="ROOM14_SCENE12_ACTIVATED" condition="$Room14_Scene12_Enable == 1" />
+		<event name="%%Room14_Scene13_Name%% Activated" tag="ROOM14_SCENE13_ACTIVATED" condition="$Room14_Scene13_Enable == 1" />
+		<event name="%%Room14_Scene14_Name%% Activated" tag="ROOM14_SCENE14_ACTIVATED" condition="$Room14_Scene14_Enable == 1" />
+		<event name="%%Room14_Scene15_Name%% Activated" tag="ROOM14_SCENE15_ACTIVATED" condition="$Room14_Scene15_Enable == 1" />
+		<event name="%%Room14_Scene16_Name%% Activated" tag="ROOM14_SCENE16_ACTIVATED" condition="$Room14_Scene16_Enable == 1" />
+		<event name="%%Room14_Scene17_Name%% Activated" tag="ROOM14_SCENE17_ACTIVATED" condition="$Room14_Scene17_Enable == 1" />
+		<event name="%%Room14_Scene18_Name%% Activated" tag="ROOM14_SCENE18_ACTIVATED" condition="$Room14_Scene18_Enable == 1" />
+		<event name="%%Room14_Scene19_Name%% Activated" tag="ROOM14_SCENE19_ACTIVATED" condition="$Room14_Scene19_Enable == 1" />
+		<event name="%%Room14_Scene20_Name%% Activated" tag="ROOM14_SCENE20_ACTIVATED" condition="$Room14_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 15 Light Events -->
+	<category name="%%Room15_Name%% Lights" condition="$Room15_Enable == 1">
+		<event name="%%Room15_Light1_Name%% Turned On" tag="ROOM15_LIGHT1_ON" condition="$Room15_Light1_Enable == 1" />
+		<event name="%%Room15_Light1_Name%% Turned Off" tag="ROOM15_LIGHT1_OFF" condition="$Room15_Light1_Enable == 1" />
+		<event name="%%Room15_Light1_Name%% Level Changed" tag="ROOM15_LIGHT1_LEVEL" condition="$Room15_Light1_Enable == 1 and $Room15_Light1_IsDimmer == 1" />
+		<event name="%%Room15_Light2_Name%% Turned On" tag="ROOM15_LIGHT2_ON" condition="$Room15_Light2_Enable == 1" />
+		<event name="%%Room15_Light2_Name%% Turned Off" tag="ROOM15_LIGHT2_OFF" condition="$Room15_Light2_Enable == 1" />
+		<event name="%%Room15_Light2_Name%% Level Changed" tag="ROOM15_LIGHT2_LEVEL" condition="$Room15_Light2_Enable == 1 and $Room15_Light2_IsDimmer == 1" />
+		<event name="%%Room15_Light3_Name%% Turned On" tag="ROOM15_LIGHT3_ON" condition="$Room15_Light3_Enable == 1" />
+		<event name="%%Room15_Light3_Name%% Turned Off" tag="ROOM15_LIGHT3_OFF" condition="$Room15_Light3_Enable == 1" />
+		<event name="%%Room15_Light3_Name%% Level Changed" tag="ROOM15_LIGHT3_LEVEL" condition="$Room15_Light3_Enable == 1 and $Room15_Light3_IsDimmer == 1" />
+		<event name="%%Room15_Light4_Name%% Turned On" tag="ROOM15_LIGHT4_ON" condition="$Room15_Light4_Enable == 1" />
+		<event name="%%Room15_Light4_Name%% Turned Off" tag="ROOM15_LIGHT4_OFF" condition="$Room15_Light4_Enable == 1" />
+		<event name="%%Room15_Light4_Name%% Level Changed" tag="ROOM15_LIGHT4_LEVEL" condition="$Room15_Light4_Enable == 1 and $Room15_Light4_IsDimmer == 1" />
+		<event name="%%Room15_Light5_Name%% Turned On" tag="ROOM15_LIGHT5_ON" condition="$Room15_Light5_Enable == 1" />
+		<event name="%%Room15_Light5_Name%% Turned Off" tag="ROOM15_LIGHT5_OFF" condition="$Room15_Light5_Enable == 1" />
+		<event name="%%Room15_Light5_Name%% Level Changed" tag="ROOM15_LIGHT5_LEVEL" condition="$Room15_Light5_Enable == 1 and $Room15_Light5_IsDimmer == 1" />
+		<event name="%%Room15_Light6_Name%% Turned On" tag="ROOM15_LIGHT6_ON" condition="$Room15_Light6_Enable == 1" />
+		<event name="%%Room15_Light6_Name%% Turned Off" tag="ROOM15_LIGHT6_OFF" condition="$Room15_Light6_Enable == 1" />
+		<event name="%%Room15_Light6_Name%% Level Changed" tag="ROOM15_LIGHT6_LEVEL" condition="$Room15_Light6_Enable == 1 and $Room15_Light6_IsDimmer == 1" />
+		<event name="%%Room15_Light7_Name%% Turned On" tag="ROOM15_LIGHT7_ON" condition="$Room15_Light7_Enable == 1" />
+		<event name="%%Room15_Light7_Name%% Turned Off" tag="ROOM15_LIGHT7_OFF" condition="$Room15_Light7_Enable == 1" />
+		<event name="%%Room15_Light7_Name%% Level Changed" tag="ROOM15_LIGHT7_LEVEL" condition="$Room15_Light7_Enable == 1 and $Room15_Light7_IsDimmer == 1" />
+		<event name="%%Room15_Light8_Name%% Turned On" tag="ROOM15_LIGHT8_ON" condition="$Room15_Light8_Enable == 1" />
+		<event name="%%Room15_Light8_Name%% Turned Off" tag="ROOM15_LIGHT8_OFF" condition="$Room15_Light8_Enable == 1" />
+		<event name="%%Room15_Light8_Name%% Level Changed" tag="ROOM15_LIGHT8_LEVEL" condition="$Room15_Light8_Enable == 1 and $Room15_Light8_IsDimmer == 1" />
+		<event name="%%Room15_Light9_Name%% Turned On" tag="ROOM15_LIGHT9_ON" condition="$Room15_Light9_Enable == 1" />
+		<event name="%%Room15_Light9_Name%% Turned Off" tag="ROOM15_LIGHT9_OFF" condition="$Room15_Light9_Enable == 1" />
+		<event name="%%Room15_Light9_Name%% Level Changed" tag="ROOM15_LIGHT9_LEVEL" condition="$Room15_Light9_Enable == 1 and $Room15_Light9_IsDimmer == 1" />
+		<event name="%%Room15_Light10_Name%% Turned On" tag="ROOM15_LIGHT10_ON" condition="$Room15_Light10_Enable == 1" />
+		<event name="%%Room15_Light10_Name%% Turned Off" tag="ROOM15_LIGHT10_OFF" condition="$Room15_Light10_Enable == 1" />
+		<event name="%%Room15_Light10_Name%% Level Changed" tag="ROOM15_LIGHT10_LEVEL" condition="$Room15_Light10_Enable == 1 and $Room15_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 15 Scene Events -->
+	<category name="%%Room15_Name%% Scenes" condition="$Room15_Enable == 1">
+		<event name="%%Room15_Scene1_Name%% Activated" tag="ROOM15_SCENE1_ACTIVATED" condition="$Room15_Scene1_Enable == 1" />
+		<event name="%%Room15_Scene2_Name%% Activated" tag="ROOM15_SCENE2_ACTIVATED" condition="$Room15_Scene2_Enable == 1" />
+		<event name="%%Room15_Scene3_Name%% Activated" tag="ROOM15_SCENE3_ACTIVATED" condition="$Room15_Scene3_Enable == 1" />
+		<event name="%%Room15_Scene4_Name%% Activated" tag="ROOM15_SCENE4_ACTIVATED" condition="$Room15_Scene4_Enable == 1" />
+		<event name="%%Room15_Scene5_Name%% Activated" tag="ROOM15_SCENE5_ACTIVATED" condition="$Room15_Scene5_Enable == 1" />
+		<event name="%%Room15_Scene6_Name%% Activated" tag="ROOM15_SCENE6_ACTIVATED" condition="$Room15_Scene6_Enable == 1" />
+		<event name="%%Room15_Scene7_Name%% Activated" tag="ROOM15_SCENE7_ACTIVATED" condition="$Room15_Scene7_Enable == 1" />
+		<event name="%%Room15_Scene8_Name%% Activated" tag="ROOM15_SCENE8_ACTIVATED" condition="$Room15_Scene8_Enable == 1" />
+		<event name="%%Room15_Scene9_Name%% Activated" tag="ROOM15_SCENE9_ACTIVATED" condition="$Room15_Scene9_Enable == 1" />
+		<event name="%%Room15_Scene10_Name%% Activated" tag="ROOM15_SCENE10_ACTIVATED" condition="$Room15_Scene10_Enable == 1" />
+		<event name="%%Room15_Scene11_Name%% Activated" tag="ROOM15_SCENE11_ACTIVATED" condition="$Room15_Scene11_Enable == 1" />
+		<event name="%%Room15_Scene12_Name%% Activated" tag="ROOM15_SCENE12_ACTIVATED" condition="$Room15_Scene12_Enable == 1" />
+		<event name="%%Room15_Scene13_Name%% Activated" tag="ROOM15_SCENE13_ACTIVATED" condition="$Room15_Scene13_Enable == 1" />
+		<event name="%%Room15_Scene14_Name%% Activated" tag="ROOM15_SCENE14_ACTIVATED" condition="$Room15_Scene14_Enable == 1" />
+		<event name="%%Room15_Scene15_Name%% Activated" tag="ROOM15_SCENE15_ACTIVATED" condition="$Room15_Scene15_Enable == 1" />
+		<event name="%%Room15_Scene16_Name%% Activated" tag="ROOM15_SCENE16_ACTIVATED" condition="$Room15_Scene16_Enable == 1" />
+		<event name="%%Room15_Scene17_Name%% Activated" tag="ROOM15_SCENE17_ACTIVATED" condition="$Room15_Scene17_Enable == 1" />
+		<event name="%%Room15_Scene18_Name%% Activated" tag="ROOM15_SCENE18_ACTIVATED" condition="$Room15_Scene18_Enable == 1" />
+		<event name="%%Room15_Scene19_Name%% Activated" tag="ROOM15_SCENE19_ACTIVATED" condition="$Room15_Scene19_Enable == 1" />
+		<event name="%%Room15_Scene20_Name%% Activated" tag="ROOM15_SCENE20_ACTIVATED" condition="$Room15_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 16 Light Events -->
+	<category name="%%Room16_Name%% Lights" condition="$Room16_Enable == 1">
+		<event name="%%Room16_Light1_Name%% Turned On" tag="ROOM16_LIGHT1_ON" condition="$Room16_Light1_Enable == 1" />
+		<event name="%%Room16_Light1_Name%% Turned Off" tag="ROOM16_LIGHT1_OFF" condition="$Room16_Light1_Enable == 1" />
+		<event name="%%Room16_Light1_Name%% Level Changed" tag="ROOM16_LIGHT1_LEVEL" condition="$Room16_Light1_Enable == 1 and $Room16_Light1_IsDimmer == 1" />
+		<event name="%%Room16_Light2_Name%% Turned On" tag="ROOM16_LIGHT2_ON" condition="$Room16_Light2_Enable == 1" />
+		<event name="%%Room16_Light2_Name%% Turned Off" tag="ROOM16_LIGHT2_OFF" condition="$Room16_Light2_Enable == 1" />
+		<event name="%%Room16_Light2_Name%% Level Changed" tag="ROOM16_LIGHT2_LEVEL" condition="$Room16_Light2_Enable == 1 and $Room16_Light2_IsDimmer == 1" />
+		<event name="%%Room16_Light3_Name%% Turned On" tag="ROOM16_LIGHT3_ON" condition="$Room16_Light3_Enable == 1" />
+		<event name="%%Room16_Light3_Name%% Turned Off" tag="ROOM16_LIGHT3_OFF" condition="$Room16_Light3_Enable == 1" />
+		<event name="%%Room16_Light3_Name%% Level Changed" tag="ROOM16_LIGHT3_LEVEL" condition="$Room16_Light3_Enable == 1 and $Room16_Light3_IsDimmer == 1" />
+		<event name="%%Room16_Light4_Name%% Turned On" tag="ROOM16_LIGHT4_ON" condition="$Room16_Light4_Enable == 1" />
+		<event name="%%Room16_Light4_Name%% Turned Off" tag="ROOM16_LIGHT4_OFF" condition="$Room16_Light4_Enable == 1" />
+		<event name="%%Room16_Light4_Name%% Level Changed" tag="ROOM16_LIGHT4_LEVEL" condition="$Room16_Light4_Enable == 1 and $Room16_Light4_IsDimmer == 1" />
+		<event name="%%Room16_Light5_Name%% Turned On" tag="ROOM16_LIGHT5_ON" condition="$Room16_Light5_Enable == 1" />
+		<event name="%%Room16_Light5_Name%% Turned Off" tag="ROOM16_LIGHT5_OFF" condition="$Room16_Light5_Enable == 1" />
+		<event name="%%Room16_Light5_Name%% Level Changed" tag="ROOM16_LIGHT5_LEVEL" condition="$Room16_Light5_Enable == 1 and $Room16_Light5_IsDimmer == 1" />
+		<event name="%%Room16_Light6_Name%% Turned On" tag="ROOM16_LIGHT6_ON" condition="$Room16_Light6_Enable == 1" />
+		<event name="%%Room16_Light6_Name%% Turned Off" tag="ROOM16_LIGHT6_OFF" condition="$Room16_Light6_Enable == 1" />
+		<event name="%%Room16_Light6_Name%% Level Changed" tag="ROOM16_LIGHT6_LEVEL" condition="$Room16_Light6_Enable == 1 and $Room16_Light6_IsDimmer == 1" />
+		<event name="%%Room16_Light7_Name%% Turned On" tag="ROOM16_LIGHT7_ON" condition="$Room16_Light7_Enable == 1" />
+		<event name="%%Room16_Light7_Name%% Turned Off" tag="ROOM16_LIGHT7_OFF" condition="$Room16_Light7_Enable == 1" />
+		<event name="%%Room16_Light7_Name%% Level Changed" tag="ROOM16_LIGHT7_LEVEL" condition="$Room16_Light7_Enable == 1 and $Room16_Light7_IsDimmer == 1" />
+		<event name="%%Room16_Light8_Name%% Turned On" tag="ROOM16_LIGHT8_ON" condition="$Room16_Light8_Enable == 1" />
+		<event name="%%Room16_Light8_Name%% Turned Off" tag="ROOM16_LIGHT8_OFF" condition="$Room16_Light8_Enable == 1" />
+		<event name="%%Room16_Light8_Name%% Level Changed" tag="ROOM16_LIGHT8_LEVEL" condition="$Room16_Light8_Enable == 1 and $Room16_Light8_IsDimmer == 1" />
+		<event name="%%Room16_Light9_Name%% Turned On" tag="ROOM16_LIGHT9_ON" condition="$Room16_Light9_Enable == 1" />
+		<event name="%%Room16_Light9_Name%% Turned Off" tag="ROOM16_LIGHT9_OFF" condition="$Room16_Light9_Enable == 1" />
+		<event name="%%Room16_Light9_Name%% Level Changed" tag="ROOM16_LIGHT9_LEVEL" condition="$Room16_Light9_Enable == 1 and $Room16_Light9_IsDimmer == 1" />
+		<event name="%%Room16_Light10_Name%% Turned On" tag="ROOM16_LIGHT10_ON" condition="$Room16_Light10_Enable == 1" />
+		<event name="%%Room16_Light10_Name%% Turned Off" tag="ROOM16_LIGHT10_OFF" condition="$Room16_Light10_Enable == 1" />
+		<event name="%%Room16_Light10_Name%% Level Changed" tag="ROOM16_LIGHT10_LEVEL" condition="$Room16_Light10_Enable == 1 and $Room16_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 16 Scene Events -->
+	<category name="%%Room16_Name%% Scenes" condition="$Room16_Enable == 1">
+		<event name="%%Room16_Scene1_Name%% Activated" tag="ROOM16_SCENE1_ACTIVATED" condition="$Room16_Scene1_Enable == 1" />
+		<event name="%%Room16_Scene2_Name%% Activated" tag="ROOM16_SCENE2_ACTIVATED" condition="$Room16_Scene2_Enable == 1" />
+		<event name="%%Room16_Scene3_Name%% Activated" tag="ROOM16_SCENE3_ACTIVATED" condition="$Room16_Scene3_Enable == 1" />
+		<event name="%%Room16_Scene4_Name%% Activated" tag="ROOM16_SCENE4_ACTIVATED" condition="$Room16_Scene4_Enable == 1" />
+		<event name="%%Room16_Scene5_Name%% Activated" tag="ROOM16_SCENE5_ACTIVATED" condition="$Room16_Scene5_Enable == 1" />
+		<event name="%%Room16_Scene6_Name%% Activated" tag="ROOM16_SCENE6_ACTIVATED" condition="$Room16_Scene6_Enable == 1" />
+		<event name="%%Room16_Scene7_Name%% Activated" tag="ROOM16_SCENE7_ACTIVATED" condition="$Room16_Scene7_Enable == 1" />
+		<event name="%%Room16_Scene8_Name%% Activated" tag="ROOM16_SCENE8_ACTIVATED" condition="$Room16_Scene8_Enable == 1" />
+		<event name="%%Room16_Scene9_Name%% Activated" tag="ROOM16_SCENE9_ACTIVATED" condition="$Room16_Scene9_Enable == 1" />
+		<event name="%%Room16_Scene10_Name%% Activated" tag="ROOM16_SCENE10_ACTIVATED" condition="$Room16_Scene10_Enable == 1" />
+		<event name="%%Room16_Scene11_Name%% Activated" tag="ROOM16_SCENE11_ACTIVATED" condition="$Room16_Scene11_Enable == 1" />
+		<event name="%%Room16_Scene12_Name%% Activated" tag="ROOM16_SCENE12_ACTIVATED" condition="$Room16_Scene12_Enable == 1" />
+		<event name="%%Room16_Scene13_Name%% Activated" tag="ROOM16_SCENE13_ACTIVATED" condition="$Room16_Scene13_Enable == 1" />
+		<event name="%%Room16_Scene14_Name%% Activated" tag="ROOM16_SCENE14_ACTIVATED" condition="$Room16_Scene14_Enable == 1" />
+		<event name="%%Room16_Scene15_Name%% Activated" tag="ROOM16_SCENE15_ACTIVATED" condition="$Room16_Scene15_Enable == 1" />
+		<event name="%%Room16_Scene16_Name%% Activated" tag="ROOM16_SCENE16_ACTIVATED" condition="$Room16_Scene16_Enable == 1" />
+		<event name="%%Room16_Scene17_Name%% Activated" tag="ROOM16_SCENE17_ACTIVATED" condition="$Room16_Scene17_Enable == 1" />
+		<event name="%%Room16_Scene18_Name%% Activated" tag="ROOM16_SCENE18_ACTIVATED" condition="$Room16_Scene18_Enable == 1" />
+		<event name="%%Room16_Scene19_Name%% Activated" tag="ROOM16_SCENE19_ACTIVATED" condition="$Room16_Scene19_Enable == 1" />
+		<event name="%%Room16_Scene20_Name%% Activated" tag="ROOM16_SCENE20_ACTIVATED" condition="$Room16_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 17 Light Events -->
+	<category name="%%Room17_Name%% Lights" condition="$Room17_Enable == 1">
+		<event name="%%Room17_Light1_Name%% Turned On" tag="ROOM17_LIGHT1_ON" condition="$Room17_Light1_Enable == 1" />
+		<event name="%%Room17_Light1_Name%% Turned Off" tag="ROOM17_LIGHT1_OFF" condition="$Room17_Light1_Enable == 1" />
+		<event name="%%Room17_Light1_Name%% Level Changed" tag="ROOM17_LIGHT1_LEVEL" condition="$Room17_Light1_Enable == 1 and $Room17_Light1_IsDimmer == 1" />
+		<event name="%%Room17_Light2_Name%% Turned On" tag="ROOM17_LIGHT2_ON" condition="$Room17_Light2_Enable == 1" />
+		<event name="%%Room17_Light2_Name%% Turned Off" tag="ROOM17_LIGHT2_OFF" condition="$Room17_Light2_Enable == 1" />
+		<event name="%%Room17_Light2_Name%% Level Changed" tag="ROOM17_LIGHT2_LEVEL" condition="$Room17_Light2_Enable == 1 and $Room17_Light2_IsDimmer == 1" />
+		<event name="%%Room17_Light3_Name%% Turned On" tag="ROOM17_LIGHT3_ON" condition="$Room17_Light3_Enable == 1" />
+		<event name="%%Room17_Light3_Name%% Turned Off" tag="ROOM17_LIGHT3_OFF" condition="$Room17_Light3_Enable == 1" />
+		<event name="%%Room17_Light3_Name%% Level Changed" tag="ROOM17_LIGHT3_LEVEL" condition="$Room17_Light3_Enable == 1 and $Room17_Light3_IsDimmer == 1" />
+		<event name="%%Room17_Light4_Name%% Turned On" tag="ROOM17_LIGHT4_ON" condition="$Room17_Light4_Enable == 1" />
+		<event name="%%Room17_Light4_Name%% Turned Off" tag="ROOM17_LIGHT4_OFF" condition="$Room17_Light4_Enable == 1" />
+		<event name="%%Room17_Light4_Name%% Level Changed" tag="ROOM17_LIGHT4_LEVEL" condition="$Room17_Light4_Enable == 1 and $Room17_Light4_IsDimmer == 1" />
+		<event name="%%Room17_Light5_Name%% Turned On" tag="ROOM17_LIGHT5_ON" condition="$Room17_Light5_Enable == 1" />
+		<event name="%%Room17_Light5_Name%% Turned Off" tag="ROOM17_LIGHT5_OFF" condition="$Room17_Light5_Enable == 1" />
+		<event name="%%Room17_Light5_Name%% Level Changed" tag="ROOM17_LIGHT5_LEVEL" condition="$Room17_Light5_Enable == 1 and $Room17_Light5_IsDimmer == 1" />
+		<event name="%%Room17_Light6_Name%% Turned On" tag="ROOM17_LIGHT6_ON" condition="$Room17_Light6_Enable == 1" />
+		<event name="%%Room17_Light6_Name%% Turned Off" tag="ROOM17_LIGHT6_OFF" condition="$Room17_Light6_Enable == 1" />
+		<event name="%%Room17_Light6_Name%% Level Changed" tag="ROOM17_LIGHT6_LEVEL" condition="$Room17_Light6_Enable == 1 and $Room17_Light6_IsDimmer == 1" />
+		<event name="%%Room17_Light7_Name%% Turned On" tag="ROOM17_LIGHT7_ON" condition="$Room17_Light7_Enable == 1" />
+		<event name="%%Room17_Light7_Name%% Turned Off" tag="ROOM17_LIGHT7_OFF" condition="$Room17_Light7_Enable == 1" />
+		<event name="%%Room17_Light7_Name%% Level Changed" tag="ROOM17_LIGHT7_LEVEL" condition="$Room17_Light7_Enable == 1 and $Room17_Light7_IsDimmer == 1" />
+		<event name="%%Room17_Light8_Name%% Turned On" tag="ROOM17_LIGHT8_ON" condition="$Room17_Light8_Enable == 1" />
+		<event name="%%Room17_Light8_Name%% Turned Off" tag="ROOM17_LIGHT8_OFF" condition="$Room17_Light8_Enable == 1" />
+		<event name="%%Room17_Light8_Name%% Level Changed" tag="ROOM17_LIGHT8_LEVEL" condition="$Room17_Light8_Enable == 1 and $Room17_Light8_IsDimmer == 1" />
+		<event name="%%Room17_Light9_Name%% Turned On" tag="ROOM17_LIGHT9_ON" condition="$Room17_Light9_Enable == 1" />
+		<event name="%%Room17_Light9_Name%% Turned Off" tag="ROOM17_LIGHT9_OFF" condition="$Room17_Light9_Enable == 1" />
+		<event name="%%Room17_Light9_Name%% Level Changed" tag="ROOM17_LIGHT9_LEVEL" condition="$Room17_Light9_Enable == 1 and $Room17_Light9_IsDimmer == 1" />
+		<event name="%%Room17_Light10_Name%% Turned On" tag="ROOM17_LIGHT10_ON" condition="$Room17_Light10_Enable == 1" />
+		<event name="%%Room17_Light10_Name%% Turned Off" tag="ROOM17_LIGHT10_OFF" condition="$Room17_Light10_Enable == 1" />
+		<event name="%%Room17_Light10_Name%% Level Changed" tag="ROOM17_LIGHT10_LEVEL" condition="$Room17_Light10_Enable == 1 and $Room17_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 17 Scene Events -->
+	<category name="%%Room17_Name%% Scenes" condition="$Room17_Enable == 1">
+		<event name="%%Room17_Scene1_Name%% Activated" tag="ROOM17_SCENE1_ACTIVATED" condition="$Room17_Scene1_Enable == 1" />
+		<event name="%%Room17_Scene2_Name%% Activated" tag="ROOM17_SCENE2_ACTIVATED" condition="$Room17_Scene2_Enable == 1" />
+		<event name="%%Room17_Scene3_Name%% Activated" tag="ROOM17_SCENE3_ACTIVATED" condition="$Room17_Scene3_Enable == 1" />
+		<event name="%%Room17_Scene4_Name%% Activated" tag="ROOM17_SCENE4_ACTIVATED" condition="$Room17_Scene4_Enable == 1" />
+		<event name="%%Room17_Scene5_Name%% Activated" tag="ROOM17_SCENE5_ACTIVATED" condition="$Room17_Scene5_Enable == 1" />
+		<event name="%%Room17_Scene6_Name%% Activated" tag="ROOM17_SCENE6_ACTIVATED" condition="$Room17_Scene6_Enable == 1" />
+		<event name="%%Room17_Scene7_Name%% Activated" tag="ROOM17_SCENE7_ACTIVATED" condition="$Room17_Scene7_Enable == 1" />
+		<event name="%%Room17_Scene8_Name%% Activated" tag="ROOM17_SCENE8_ACTIVATED" condition="$Room17_Scene8_Enable == 1" />
+		<event name="%%Room17_Scene9_Name%% Activated" tag="ROOM17_SCENE9_ACTIVATED" condition="$Room17_Scene9_Enable == 1" />
+		<event name="%%Room17_Scene10_Name%% Activated" tag="ROOM17_SCENE10_ACTIVATED" condition="$Room17_Scene10_Enable == 1" />
+		<event name="%%Room17_Scene11_Name%% Activated" tag="ROOM17_SCENE11_ACTIVATED" condition="$Room17_Scene11_Enable == 1" />
+		<event name="%%Room17_Scene12_Name%% Activated" tag="ROOM17_SCENE12_ACTIVATED" condition="$Room17_Scene12_Enable == 1" />
+		<event name="%%Room17_Scene13_Name%% Activated" tag="ROOM17_SCENE13_ACTIVATED" condition="$Room17_Scene13_Enable == 1" />
+		<event name="%%Room17_Scene14_Name%% Activated" tag="ROOM17_SCENE14_ACTIVATED" condition="$Room17_Scene14_Enable == 1" />
+		<event name="%%Room17_Scene15_Name%% Activated" tag="ROOM17_SCENE15_ACTIVATED" condition="$Room17_Scene15_Enable == 1" />
+		<event name="%%Room17_Scene16_Name%% Activated" tag="ROOM17_SCENE16_ACTIVATED" condition="$Room17_Scene16_Enable == 1" />
+		<event name="%%Room17_Scene17_Name%% Activated" tag="ROOM17_SCENE17_ACTIVATED" condition="$Room17_Scene17_Enable == 1" />
+		<event name="%%Room17_Scene18_Name%% Activated" tag="ROOM17_SCENE18_ACTIVATED" condition="$Room17_Scene18_Enable == 1" />
+		<event name="%%Room17_Scene19_Name%% Activated" tag="ROOM17_SCENE19_ACTIVATED" condition="$Room17_Scene19_Enable == 1" />
+		<event name="%%Room17_Scene20_Name%% Activated" tag="ROOM17_SCENE20_ACTIVATED" condition="$Room17_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 18 Light Events -->
+	<category name="%%Room18_Name%% Lights" condition="$Room18_Enable == 1">
+		<event name="%%Room18_Light1_Name%% Turned On" tag="ROOM18_LIGHT1_ON" condition="$Room18_Light1_Enable == 1" />
+		<event name="%%Room18_Light1_Name%% Turned Off" tag="ROOM18_LIGHT1_OFF" condition="$Room18_Light1_Enable == 1" />
+		<event name="%%Room18_Light1_Name%% Level Changed" tag="ROOM18_LIGHT1_LEVEL" condition="$Room18_Light1_Enable == 1 and $Room18_Light1_IsDimmer == 1" />
+		<event name="%%Room18_Light2_Name%% Turned On" tag="ROOM18_LIGHT2_ON" condition="$Room18_Light2_Enable == 1" />
+		<event name="%%Room18_Light2_Name%% Turned Off" tag="ROOM18_LIGHT2_OFF" condition="$Room18_Light2_Enable == 1" />
+		<event name="%%Room18_Light2_Name%% Level Changed" tag="ROOM18_LIGHT2_LEVEL" condition="$Room18_Light2_Enable == 1 and $Room18_Light2_IsDimmer == 1" />
+		<event name="%%Room18_Light3_Name%% Turned On" tag="ROOM18_LIGHT3_ON" condition="$Room18_Light3_Enable == 1" />
+		<event name="%%Room18_Light3_Name%% Turned Off" tag="ROOM18_LIGHT3_OFF" condition="$Room18_Light3_Enable == 1" />
+		<event name="%%Room18_Light3_Name%% Level Changed" tag="ROOM18_LIGHT3_LEVEL" condition="$Room18_Light3_Enable == 1 and $Room18_Light3_IsDimmer == 1" />
+		<event name="%%Room18_Light4_Name%% Turned On" tag="ROOM18_LIGHT4_ON" condition="$Room18_Light4_Enable == 1" />
+		<event name="%%Room18_Light4_Name%% Turned Off" tag="ROOM18_LIGHT4_OFF" condition="$Room18_Light4_Enable == 1" />
+		<event name="%%Room18_Light4_Name%% Level Changed" tag="ROOM18_LIGHT4_LEVEL" condition="$Room18_Light4_Enable == 1 and $Room18_Light4_IsDimmer == 1" />
+		<event name="%%Room18_Light5_Name%% Turned On" tag="ROOM18_LIGHT5_ON" condition="$Room18_Light5_Enable == 1" />
+		<event name="%%Room18_Light5_Name%% Turned Off" tag="ROOM18_LIGHT5_OFF" condition="$Room18_Light5_Enable == 1" />
+		<event name="%%Room18_Light5_Name%% Level Changed" tag="ROOM18_LIGHT5_LEVEL" condition="$Room18_Light5_Enable == 1 and $Room18_Light5_IsDimmer == 1" />
+		<event name="%%Room18_Light6_Name%% Turned On" tag="ROOM18_LIGHT6_ON" condition="$Room18_Light6_Enable == 1" />
+		<event name="%%Room18_Light6_Name%% Turned Off" tag="ROOM18_LIGHT6_OFF" condition="$Room18_Light6_Enable == 1" />
+		<event name="%%Room18_Light6_Name%% Level Changed" tag="ROOM18_LIGHT6_LEVEL" condition="$Room18_Light6_Enable == 1 and $Room18_Light6_IsDimmer == 1" />
+		<event name="%%Room18_Light7_Name%% Turned On" tag="ROOM18_LIGHT7_ON" condition="$Room18_Light7_Enable == 1" />
+		<event name="%%Room18_Light7_Name%% Turned Off" tag="ROOM18_LIGHT7_OFF" condition="$Room18_Light7_Enable == 1" />
+		<event name="%%Room18_Light7_Name%% Level Changed" tag="ROOM18_LIGHT7_LEVEL" condition="$Room18_Light7_Enable == 1 and $Room18_Light7_IsDimmer == 1" />
+		<event name="%%Room18_Light8_Name%% Turned On" tag="ROOM18_LIGHT8_ON" condition="$Room18_Light8_Enable == 1" />
+		<event name="%%Room18_Light8_Name%% Turned Off" tag="ROOM18_LIGHT8_OFF" condition="$Room18_Light8_Enable == 1" />
+		<event name="%%Room18_Light8_Name%% Level Changed" tag="ROOM18_LIGHT8_LEVEL" condition="$Room18_Light8_Enable == 1 and $Room18_Light8_IsDimmer == 1" />
+		<event name="%%Room18_Light9_Name%% Turned On" tag="ROOM18_LIGHT9_ON" condition="$Room18_Light9_Enable == 1" />
+		<event name="%%Room18_Light9_Name%% Turned Off" tag="ROOM18_LIGHT9_OFF" condition="$Room18_Light9_Enable == 1" />
+		<event name="%%Room18_Light9_Name%% Level Changed" tag="ROOM18_LIGHT9_LEVEL" condition="$Room18_Light9_Enable == 1 and $Room18_Light9_IsDimmer == 1" />
+		<event name="%%Room18_Light10_Name%% Turned On" tag="ROOM18_LIGHT10_ON" condition="$Room18_Light10_Enable == 1" />
+		<event name="%%Room18_Light10_Name%% Turned Off" tag="ROOM18_LIGHT10_OFF" condition="$Room18_Light10_Enable == 1" />
+		<event name="%%Room18_Light10_Name%% Level Changed" tag="ROOM18_LIGHT10_LEVEL" condition="$Room18_Light10_Enable == 1 and $Room18_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 18 Scene Events -->
+	<category name="%%Room18_Name%% Scenes" condition="$Room18_Enable == 1">
+		<event name="%%Room18_Scene1_Name%% Activated" tag="ROOM18_SCENE1_ACTIVATED" condition="$Room18_Scene1_Enable == 1" />
+		<event name="%%Room18_Scene2_Name%% Activated" tag="ROOM18_SCENE2_ACTIVATED" condition="$Room18_Scene2_Enable == 1" />
+		<event name="%%Room18_Scene3_Name%% Activated" tag="ROOM18_SCENE3_ACTIVATED" condition="$Room18_Scene3_Enable == 1" />
+		<event name="%%Room18_Scene4_Name%% Activated" tag="ROOM18_SCENE4_ACTIVATED" condition="$Room18_Scene4_Enable == 1" />
+		<event name="%%Room18_Scene5_Name%% Activated" tag="ROOM18_SCENE5_ACTIVATED" condition="$Room18_Scene5_Enable == 1" />
+		<event name="%%Room18_Scene6_Name%% Activated" tag="ROOM18_SCENE6_ACTIVATED" condition="$Room18_Scene6_Enable == 1" />
+		<event name="%%Room18_Scene7_Name%% Activated" tag="ROOM18_SCENE7_ACTIVATED" condition="$Room18_Scene7_Enable == 1" />
+		<event name="%%Room18_Scene8_Name%% Activated" tag="ROOM18_SCENE8_ACTIVATED" condition="$Room18_Scene8_Enable == 1" />
+		<event name="%%Room18_Scene9_Name%% Activated" tag="ROOM18_SCENE9_ACTIVATED" condition="$Room18_Scene9_Enable == 1" />
+		<event name="%%Room18_Scene10_Name%% Activated" tag="ROOM18_SCENE10_ACTIVATED" condition="$Room18_Scene10_Enable == 1" />
+		<event name="%%Room18_Scene11_Name%% Activated" tag="ROOM18_SCENE11_ACTIVATED" condition="$Room18_Scene11_Enable == 1" />
+		<event name="%%Room18_Scene12_Name%% Activated" tag="ROOM18_SCENE12_ACTIVATED" condition="$Room18_Scene12_Enable == 1" />
+		<event name="%%Room18_Scene13_Name%% Activated" tag="ROOM18_SCENE13_ACTIVATED" condition="$Room18_Scene13_Enable == 1" />
+		<event name="%%Room18_Scene14_Name%% Activated" tag="ROOM18_SCENE14_ACTIVATED" condition="$Room18_Scene14_Enable == 1" />
+		<event name="%%Room18_Scene15_Name%% Activated" tag="ROOM18_SCENE15_ACTIVATED" condition="$Room18_Scene15_Enable == 1" />
+		<event name="%%Room18_Scene16_Name%% Activated" tag="ROOM18_SCENE16_ACTIVATED" condition="$Room18_Scene16_Enable == 1" />
+		<event name="%%Room18_Scene17_Name%% Activated" tag="ROOM18_SCENE17_ACTIVATED" condition="$Room18_Scene17_Enable == 1" />
+		<event name="%%Room18_Scene18_Name%% Activated" tag="ROOM18_SCENE18_ACTIVATED" condition="$Room18_Scene18_Enable == 1" />
+		<event name="%%Room18_Scene19_Name%% Activated" tag="ROOM18_SCENE19_ACTIVATED" condition="$Room18_Scene19_Enable == 1" />
+		<event name="%%Room18_Scene20_Name%% Activated" tag="ROOM18_SCENE20_ACTIVATED" condition="$Room18_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 19 Light Events -->
+	<category name="%%Room19_Name%% Lights" condition="$Room19_Enable == 1">
+		<event name="%%Room19_Light1_Name%% Turned On" tag="ROOM19_LIGHT1_ON" condition="$Room19_Light1_Enable == 1" />
+		<event name="%%Room19_Light1_Name%% Turned Off" tag="ROOM19_LIGHT1_OFF" condition="$Room19_Light1_Enable == 1" />
+		<event name="%%Room19_Light1_Name%% Level Changed" tag="ROOM19_LIGHT1_LEVEL" condition="$Room19_Light1_Enable == 1 and $Room19_Light1_IsDimmer == 1" />
+		<event name="%%Room19_Light2_Name%% Turned On" tag="ROOM19_LIGHT2_ON" condition="$Room19_Light2_Enable == 1" />
+		<event name="%%Room19_Light2_Name%% Turned Off" tag="ROOM19_LIGHT2_OFF" condition="$Room19_Light2_Enable == 1" />
+		<event name="%%Room19_Light2_Name%% Level Changed" tag="ROOM19_LIGHT2_LEVEL" condition="$Room19_Light2_Enable == 1 and $Room19_Light2_IsDimmer == 1" />
+		<event name="%%Room19_Light3_Name%% Turned On" tag="ROOM19_LIGHT3_ON" condition="$Room19_Light3_Enable == 1" />
+		<event name="%%Room19_Light3_Name%% Turned Off" tag="ROOM19_LIGHT3_OFF" condition="$Room19_Light3_Enable == 1" />
+		<event name="%%Room19_Light3_Name%% Level Changed" tag="ROOM19_LIGHT3_LEVEL" condition="$Room19_Light3_Enable == 1 and $Room19_Light3_IsDimmer == 1" />
+		<event name="%%Room19_Light4_Name%% Turned On" tag="ROOM19_LIGHT4_ON" condition="$Room19_Light4_Enable == 1" />
+		<event name="%%Room19_Light4_Name%% Turned Off" tag="ROOM19_LIGHT4_OFF" condition="$Room19_Light4_Enable == 1" />
+		<event name="%%Room19_Light4_Name%% Level Changed" tag="ROOM19_LIGHT4_LEVEL" condition="$Room19_Light4_Enable == 1 and $Room19_Light4_IsDimmer == 1" />
+		<event name="%%Room19_Light5_Name%% Turned On" tag="ROOM19_LIGHT5_ON" condition="$Room19_Light5_Enable == 1" />
+		<event name="%%Room19_Light5_Name%% Turned Off" tag="ROOM19_LIGHT5_OFF" condition="$Room19_Light5_Enable == 1" />
+		<event name="%%Room19_Light5_Name%% Level Changed" tag="ROOM19_LIGHT5_LEVEL" condition="$Room19_Light5_Enable == 1 and $Room19_Light5_IsDimmer == 1" />
+		<event name="%%Room19_Light6_Name%% Turned On" tag="ROOM19_LIGHT6_ON" condition="$Room19_Light6_Enable == 1" />
+		<event name="%%Room19_Light6_Name%% Turned Off" tag="ROOM19_LIGHT6_OFF" condition="$Room19_Light6_Enable == 1" />
+		<event name="%%Room19_Light6_Name%% Level Changed" tag="ROOM19_LIGHT6_LEVEL" condition="$Room19_Light6_Enable == 1 and $Room19_Light6_IsDimmer == 1" />
+		<event name="%%Room19_Light7_Name%% Turned On" tag="ROOM19_LIGHT7_ON" condition="$Room19_Light7_Enable == 1" />
+		<event name="%%Room19_Light7_Name%% Turned Off" tag="ROOM19_LIGHT7_OFF" condition="$Room19_Light7_Enable == 1" />
+		<event name="%%Room19_Light7_Name%% Level Changed" tag="ROOM19_LIGHT7_LEVEL" condition="$Room19_Light7_Enable == 1 and $Room19_Light7_IsDimmer == 1" />
+		<event name="%%Room19_Light8_Name%% Turned On" tag="ROOM19_LIGHT8_ON" condition="$Room19_Light8_Enable == 1" />
+		<event name="%%Room19_Light8_Name%% Turned Off" tag="ROOM19_LIGHT8_OFF" condition="$Room19_Light8_Enable == 1" />
+		<event name="%%Room19_Light8_Name%% Level Changed" tag="ROOM19_LIGHT8_LEVEL" condition="$Room19_Light8_Enable == 1 and $Room19_Light8_IsDimmer == 1" />
+		<event name="%%Room19_Light9_Name%% Turned On" tag="ROOM19_LIGHT9_ON" condition="$Room19_Light9_Enable == 1" />
+		<event name="%%Room19_Light9_Name%% Turned Off" tag="ROOM19_LIGHT9_OFF" condition="$Room19_Light9_Enable == 1" />
+		<event name="%%Room19_Light9_Name%% Level Changed" tag="ROOM19_LIGHT9_LEVEL" condition="$Room19_Light9_Enable == 1 and $Room19_Light9_IsDimmer == 1" />
+		<event name="%%Room19_Light10_Name%% Turned On" tag="ROOM19_LIGHT10_ON" condition="$Room19_Light10_Enable == 1" />
+		<event name="%%Room19_Light10_Name%% Turned Off" tag="ROOM19_LIGHT10_OFF" condition="$Room19_Light10_Enable == 1" />
+		<event name="%%Room19_Light10_Name%% Level Changed" tag="ROOM19_LIGHT10_LEVEL" condition="$Room19_Light10_Enable == 1 and $Room19_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 19 Scene Events -->
+	<category name="%%Room19_Name%% Scenes" condition="$Room19_Enable == 1">
+		<event name="%%Room19_Scene1_Name%% Activated" tag="ROOM19_SCENE1_ACTIVATED" condition="$Room19_Scene1_Enable == 1" />
+		<event name="%%Room19_Scene2_Name%% Activated" tag="ROOM19_SCENE2_ACTIVATED" condition="$Room19_Scene2_Enable == 1" />
+		<event name="%%Room19_Scene3_Name%% Activated" tag="ROOM19_SCENE3_ACTIVATED" condition="$Room19_Scene3_Enable == 1" />
+		<event name="%%Room19_Scene4_Name%% Activated" tag="ROOM19_SCENE4_ACTIVATED" condition="$Room19_Scene4_Enable == 1" />
+		<event name="%%Room19_Scene5_Name%% Activated" tag="ROOM19_SCENE5_ACTIVATED" condition="$Room19_Scene5_Enable == 1" />
+		<event name="%%Room19_Scene6_Name%% Activated" tag="ROOM19_SCENE6_ACTIVATED" condition="$Room19_Scene6_Enable == 1" />
+		<event name="%%Room19_Scene7_Name%% Activated" tag="ROOM19_SCENE7_ACTIVATED" condition="$Room19_Scene7_Enable == 1" />
+		<event name="%%Room19_Scene8_Name%% Activated" tag="ROOM19_SCENE8_ACTIVATED" condition="$Room19_Scene8_Enable == 1" />
+		<event name="%%Room19_Scene9_Name%% Activated" tag="ROOM19_SCENE9_ACTIVATED" condition="$Room19_Scene9_Enable == 1" />
+		<event name="%%Room19_Scene10_Name%% Activated" tag="ROOM19_SCENE10_ACTIVATED" condition="$Room19_Scene10_Enable == 1" />
+		<event name="%%Room19_Scene11_Name%% Activated" tag="ROOM19_SCENE11_ACTIVATED" condition="$Room19_Scene11_Enable == 1" />
+		<event name="%%Room19_Scene12_Name%% Activated" tag="ROOM19_SCENE12_ACTIVATED" condition="$Room19_Scene12_Enable == 1" />
+		<event name="%%Room19_Scene13_Name%% Activated" tag="ROOM19_SCENE13_ACTIVATED" condition="$Room19_Scene13_Enable == 1" />
+		<event name="%%Room19_Scene14_Name%% Activated" tag="ROOM19_SCENE14_ACTIVATED" condition="$Room19_Scene14_Enable == 1" />
+		<event name="%%Room19_Scene15_Name%% Activated" tag="ROOM19_SCENE15_ACTIVATED" condition="$Room19_Scene15_Enable == 1" />
+		<event name="%%Room19_Scene16_Name%% Activated" tag="ROOM19_SCENE16_ACTIVATED" condition="$Room19_Scene16_Enable == 1" />
+		<event name="%%Room19_Scene17_Name%% Activated" tag="ROOM19_SCENE17_ACTIVATED" condition="$Room19_Scene17_Enable == 1" />
+		<event name="%%Room19_Scene18_Name%% Activated" tag="ROOM19_SCENE18_ACTIVATED" condition="$Room19_Scene18_Enable == 1" />
+		<event name="%%Room19_Scene19_Name%% Activated" tag="ROOM19_SCENE19_ACTIVATED" condition="$Room19_Scene19_Enable == 1" />
+		<event name="%%Room19_Scene20_Name%% Activated" tag="ROOM19_SCENE20_ACTIVATED" condition="$Room19_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Room 20 Light Events -->
+	<category name="%%Room20_Name%% Lights" condition="$Room20_Enable == 1">
+		<event name="%%Room20_Light1_Name%% Turned On" tag="ROOM20_LIGHT1_ON" condition="$Room20_Light1_Enable == 1" />
+		<event name="%%Room20_Light1_Name%% Turned Off" tag="ROOM20_LIGHT1_OFF" condition="$Room20_Light1_Enable == 1" />
+		<event name="%%Room20_Light1_Name%% Level Changed" tag="ROOM20_LIGHT1_LEVEL" condition="$Room20_Light1_Enable == 1 and $Room20_Light1_IsDimmer == 1" />
+		<event name="%%Room20_Light2_Name%% Turned On" tag="ROOM20_LIGHT2_ON" condition="$Room20_Light2_Enable == 1" />
+		<event name="%%Room20_Light2_Name%% Turned Off" tag="ROOM20_LIGHT2_OFF" condition="$Room20_Light2_Enable == 1" />
+		<event name="%%Room20_Light2_Name%% Level Changed" tag="ROOM20_LIGHT2_LEVEL" condition="$Room20_Light2_Enable == 1 and $Room20_Light2_IsDimmer == 1" />
+		<event name="%%Room20_Light3_Name%% Turned On" tag="ROOM20_LIGHT3_ON" condition="$Room20_Light3_Enable == 1" />
+		<event name="%%Room20_Light3_Name%% Turned Off" tag="ROOM20_LIGHT3_OFF" condition="$Room20_Light3_Enable == 1" />
+		<event name="%%Room20_Light3_Name%% Level Changed" tag="ROOM20_LIGHT3_LEVEL" condition="$Room20_Light3_Enable == 1 and $Room20_Light3_IsDimmer == 1" />
+		<event name="%%Room20_Light4_Name%% Turned On" tag="ROOM20_LIGHT4_ON" condition="$Room20_Light4_Enable == 1" />
+		<event name="%%Room20_Light4_Name%% Turned Off" tag="ROOM20_LIGHT4_OFF" condition="$Room20_Light4_Enable == 1" />
+		<event name="%%Room20_Light4_Name%% Level Changed" tag="ROOM20_LIGHT4_LEVEL" condition="$Room20_Light4_Enable == 1 and $Room20_Light4_IsDimmer == 1" />
+		<event name="%%Room20_Light5_Name%% Turned On" tag="ROOM20_LIGHT5_ON" condition="$Room20_Light5_Enable == 1" />
+		<event name="%%Room20_Light5_Name%% Turned Off" tag="ROOM20_LIGHT5_OFF" condition="$Room20_Light5_Enable == 1" />
+		<event name="%%Room20_Light5_Name%% Level Changed" tag="ROOM20_LIGHT5_LEVEL" condition="$Room20_Light5_Enable == 1 and $Room20_Light5_IsDimmer == 1" />
+		<event name="%%Room20_Light6_Name%% Turned On" tag="ROOM20_LIGHT6_ON" condition="$Room20_Light6_Enable == 1" />
+		<event name="%%Room20_Light6_Name%% Turned Off" tag="ROOM20_LIGHT6_OFF" condition="$Room20_Light6_Enable == 1" />
+		<event name="%%Room20_Light6_Name%% Level Changed" tag="ROOM20_LIGHT6_LEVEL" condition="$Room20_Light6_Enable == 1 and $Room20_Light6_IsDimmer == 1" />
+		<event name="%%Room20_Light7_Name%% Turned On" tag="ROOM20_LIGHT7_ON" condition="$Room20_Light7_Enable == 1" />
+		<event name="%%Room20_Light7_Name%% Turned Off" tag="ROOM20_LIGHT7_OFF" condition="$Room20_Light7_Enable == 1" />
+		<event name="%%Room20_Light7_Name%% Level Changed" tag="ROOM20_LIGHT7_LEVEL" condition="$Room20_Light7_Enable == 1 and $Room20_Light7_IsDimmer == 1" />
+		<event name="%%Room20_Light8_Name%% Turned On" tag="ROOM20_LIGHT8_ON" condition="$Room20_Light8_Enable == 1" />
+		<event name="%%Room20_Light8_Name%% Turned Off" tag="ROOM20_LIGHT8_OFF" condition="$Room20_Light8_Enable == 1" />
+		<event name="%%Room20_Light8_Name%% Level Changed" tag="ROOM20_LIGHT8_LEVEL" condition="$Room20_Light8_Enable == 1 and $Room20_Light8_IsDimmer == 1" />
+		<event name="%%Room20_Light9_Name%% Turned On" tag="ROOM20_LIGHT9_ON" condition="$Room20_Light9_Enable == 1" />
+		<event name="%%Room20_Light9_Name%% Turned Off" tag="ROOM20_LIGHT9_OFF" condition="$Room20_Light9_Enable == 1" />
+		<event name="%%Room20_Light9_Name%% Level Changed" tag="ROOM20_LIGHT9_LEVEL" condition="$Room20_Light9_Enable == 1 and $Room20_Light9_IsDimmer == 1" />
+		<event name="%%Room20_Light10_Name%% Turned On" tag="ROOM20_LIGHT10_ON" condition="$Room20_Light10_Enable == 1" />
+		<event name="%%Room20_Light10_Name%% Turned Off" tag="ROOM20_LIGHT10_OFF" condition="$Room20_Light10_Enable == 1" />
+		<event name="%%Room20_Light10_Name%% Level Changed" tag="ROOM20_LIGHT10_LEVEL" condition="$Room20_Light10_Enable == 1 and $Room20_Light10_IsDimmer == 1" />
+	</category>
+
+	<!-- Room 20 Scene Events -->
+	<category name="%%Room20_Name%% Scenes" condition="$Room20_Enable == 1">
+		<event name="%%Room20_Scene1_Name%% Activated" tag="ROOM20_SCENE1_ACTIVATED" condition="$Room20_Scene1_Enable == 1" />
+		<event name="%%Room20_Scene2_Name%% Activated" tag="ROOM20_SCENE2_ACTIVATED" condition="$Room20_Scene2_Enable == 1" />
+		<event name="%%Room20_Scene3_Name%% Activated" tag="ROOM20_SCENE3_ACTIVATED" condition="$Room20_Scene3_Enable == 1" />
+		<event name="%%Room20_Scene4_Name%% Activated" tag="ROOM20_SCENE4_ACTIVATED" condition="$Room20_Scene4_Enable == 1" />
+		<event name="%%Room20_Scene5_Name%% Activated" tag="ROOM20_SCENE5_ACTIVATED" condition="$Room20_Scene5_Enable == 1" />
+		<event name="%%Room20_Scene6_Name%% Activated" tag="ROOM20_SCENE6_ACTIVATED" condition="$Room20_Scene6_Enable == 1" />
+		<event name="%%Room20_Scene7_Name%% Activated" tag="ROOM20_SCENE7_ACTIVATED" condition="$Room20_Scene7_Enable == 1" />
+		<event name="%%Room20_Scene8_Name%% Activated" tag="ROOM20_SCENE8_ACTIVATED" condition="$Room20_Scene8_Enable == 1" />
+		<event name="%%Room20_Scene9_Name%% Activated" tag="ROOM20_SCENE9_ACTIVATED" condition="$Room20_Scene9_Enable == 1" />
+		<event name="%%Room20_Scene10_Name%% Activated" tag="ROOM20_SCENE10_ACTIVATED" condition="$Room20_Scene10_Enable == 1" />
+		<event name="%%Room20_Scene11_Name%% Activated" tag="ROOM20_SCENE11_ACTIVATED" condition="$Room20_Scene11_Enable == 1" />
+		<event name="%%Room20_Scene12_Name%% Activated" tag="ROOM20_SCENE12_ACTIVATED" condition="$Room20_Scene12_Enable == 1" />
+		<event name="%%Room20_Scene13_Name%% Activated" tag="ROOM20_SCENE13_ACTIVATED" condition="$Room20_Scene13_Enable == 1" />
+		<event name="%%Room20_Scene14_Name%% Activated" tag="ROOM20_SCENE14_ACTIVATED" condition="$Room20_Scene14_Enable == 1" />
+		<event name="%%Room20_Scene15_Name%% Activated" tag="ROOM20_SCENE15_ACTIVATED" condition="$Room20_Scene15_Enable == 1" />
+		<event name="%%Room20_Scene16_Name%% Activated" tag="ROOM20_SCENE16_ACTIVATED" condition="$Room20_Scene16_Enable == 1" />
+		<event name="%%Room20_Scene17_Name%% Activated" tag="ROOM20_SCENE17_ACTIVATED" condition="$Room20_Scene17_Enable == 1" />
+		<event name="%%Room20_Scene18_Name%% Activated" tag="ROOM20_SCENE18_ACTIVATED" condition="$Room20_Scene18_Enable == 1" />
+		<event name="%%Room20_Scene19_Name%% Activated" tag="ROOM20_SCENE19_ACTIVATED" condition="$Room20_Scene19_Enable == 1" />
+		<event name="%%Room20_Scene20_Name%% Activated" tag="ROOM20_SCENE20_ACTIVATED" condition="$Room20_Scene20_Enable == 1" />
+	</category>
+
+	<!-- Global Scene Events -->
+	<category name="Global Scenes">
+		<event name="%%GlobalScene1_Name%% Activated" tag="GLOBAL_SCENE1_ACTIVATED" condition="$GlobalScene1_Enable == 1" />
+		<event name="%%GlobalScene2_Name%% Activated" tag="GLOBAL_SCENE2_ACTIVATED" condition="$GlobalScene2_Enable == 1" />
+		<event name="%%GlobalScene3_Name%% Activated" tag="GLOBAL_SCENE3_ACTIVATED" condition="$GlobalScene3_Enable == 1" />
+		<event name="%%GlobalScene4_Name%% Activated" tag="GLOBAL_SCENE4_ACTIVATED" condition="$GlobalScene4_Enable == 1" />
+		<event name="%%GlobalScene5_Name%% Activated" tag="GLOBAL_SCENE5_ACTIVATED" condition="$GlobalScene5_Enable == 1" />
+		<event name="%%GlobalScene6_Name%% Activated" tag="GLOBAL_SCENE6_ACTIVATED" condition="$GlobalScene6_Enable == 1" />
+		<event name="%%GlobalScene7_Name%% Activated" tag="GLOBAL_SCENE7_ACTIVATED" condition="$GlobalScene7_Enable == 1" />
+		<event name="%%GlobalScene8_Name%% Activated" tag="GLOBAL_SCENE8_ACTIVATED" condition="$GlobalScene8_Enable == 1" />
+		<event name="%%GlobalScene9_Name%% Activated" tag="GLOBAL_SCENE9_ACTIVATED" condition="$GlobalScene9_Enable == 1" />
+		<event name="%%GlobalScene10_Name%% Activated" tag="GLOBAL_SCENE10_ACTIVATED" condition="$GlobalScene10_Enable == 1" />
+	</category>
+
+	<!-- System Events -->
+	<category name="System">
+		<event name="Device Discovery Complete" tag="DISCOVERY_COMPLETE" />
+		<event name="All Devices Refreshed" tag="REFRESH_COMPLETE" />
+		<event name="Polling Started" tag="POLLING_STARTED" />
+		<event name="Polling Stopped" tag="POLLING_STOPPED" />
+		<event name="Error Occurred" tag="ERROR_OCCURRED" />
+	</category>
+</events>

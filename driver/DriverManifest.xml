@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<driverManifest>
+	<driver
+		id="{C194FF6A-931F-4A6B-8EA8-E8000BB6DD45}"
+		
+		name="Fibaro Home Center"
+		author="RTI Driver Developer"
+		copyright="Copyright 2024"
+		deviceManufacturer="Fibaro"
+		deviceModel="Home Center 2/3"
+		driverVersion="5.10"
+		
+		minimumRuntimeVersion="15"
+		minimumSoftwareVersion="9.0"
+		minimumApexVersion="10.0"
+		
+		processorType="XP-8"
+		
+		configSettingsStream="ConfigSettings.xml"
+		systemEventsStream="SystemEvents.xml"
+		systemVariablesStream="SystemVariables.xml"
+		systemFunctionsStream="SystemFunctions.xml"
+	>
+		<processorScript stream="FibaroDriver.js" />
+		<processorScript stream="json2.js" />
+		
+		<resource stream="json2.js" />
+	</driver>
+</driverManifest>
